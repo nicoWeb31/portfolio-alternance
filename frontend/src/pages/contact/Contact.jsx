@@ -6,6 +6,7 @@ import { createMessage } from "../../redux/actions/massageAction";
 import { Field, reduxForm } from "redux-form";
 
 import "./contact.style.scss";
+import Reseau from "../../components/reseau/Reseau";
 //_________________________________render input______________________________________
 
 const renderError = (meta) => {
@@ -42,7 +43,10 @@ const renderInput = (formProps) => {
 };
 
 const renderTextarea = (formProps) => {
-    console.log("🚀 ~ file: Contact.jsx ~ line 58 ~ renderTextarea ~ formProps", formProps.meta)
+    console.log(
+        "🚀 ~ file: Contact.jsx ~ line 58 ~ renderTextarea ~ formProps",
+        formProps.meta
+    );
     return (
         <div className="form__group">
             <textarea
@@ -146,6 +150,11 @@ const Contact = ({ history, handleSubmit }) => {
                         </button>
                     </form>
                 </div>
+            </div>
+            <hr />
+
+            <div>
+                <Reseau />
             </div>
         </div>
     );

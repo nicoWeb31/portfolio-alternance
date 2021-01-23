@@ -17,13 +17,13 @@ const Header = () => {
                             Riot Nicolas
                         </span>
                         <span className="heading-primary--secondary">
-                            Création de contenu numérique
+                            Recherche alternace UX disigner(Bac +5)
                         </span>
                     </h1>
 
                     <Link to='/service' className="btn btn-white btn-animated">
                         {" "}
-                        Mes Services
+                        Réalisation
                     </Link>
                 </div>
             </header>
