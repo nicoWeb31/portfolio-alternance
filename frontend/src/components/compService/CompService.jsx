@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./compService.style.scss";
-import disign from "../../img/service/ui.jpg";
+import { ExternalLink } from 'react-external-link';
 import web from "../../img/service/web.jpg";
 import app from "../../img/service/app.jpg";
 import net from "../../img/service/net.jpg";
@@ -9,6 +9,7 @@ import GitHubApi from "../gitHubApi/GitHubApi";
 
 import githubService from "../../service/ApiGithub";
 import Spinner from "../spinner/Spinner";
+
 
 const CompService = () => {
     const [user, setUser] = useState({});
@@ -37,31 +38,47 @@ const CompService = () => {
                 <h3 className="heading-secondary ">Projet / Competence</h3>
             </div>
 
-            <div className="service ">
-                <div className="service__text">
-                    {loading ? (
-                        <Spinner />
-                    ) : (
-                        <GitHubApi user={user} laoding={loading} className ="servCom"/>
-                    )}
-                </div>
-            </div>
 
-            <div className="service ">
+            <div className="service vtt ">
+                <div className="row">
+                    <div className="col-6">
                 <figure className="service__shape">
-                    <img src={disign} alt="disign" className="service__img" />
+                    <img src="https://aprc.it/api/200x125/http://vtt-trail-trek-en-coeur-de-garonne.fr/" alt="disign" className="service__img" />
                 </figure>
                 <div className="service__text">
                     <h3 className="heading-tertiary u-margin-bottom-small">
-                        Conception - disign
+                        Vtt Trail Trek en coeur de garonne
                     </h3>
-                    <p>Conception de votre site internet :</p>
+                    <p>Conception de votre site internet pour une association sportive.</p>
                     <ul>
-                        <li>Creation et optimisation de la base de données.</li>
+                        <li>Cahier des charges.</li>
+                        <li>Conception et creation du site de A à Z.</li>
                         <li>Disign du site,maquetage,logo, wirefram...</li>
-                        <li>cahier des charges.</li>
+                        <li>Mise en production, maintenace</li>
+
+
                     </ul>
                 </div>
+
+
+                    </div>
+                    <div className="col-6">
+                        <h3 className="heading-tertiary u-margin-bottom-small">Stack technique :</h3>
+                        <ul>
+                        <li>Html5,CSS3</li>
+                        <li>PHP, mysql</li>
+                        <li>Framwork : Symfony 4, Bootstrap 4, react </li>
+                        
+
+
+                    </ul>
+                    </div>
+                </div>
+                <hr/>
+                <p>Ce projet a etait realiser dans le cadre de ma formation de concepteur/dévelloppeur web. Réaliser entierement en autonomie, il a sevit de support a mon mémoire de fin d'etude.</p>
+                <ExternalLink href="https://vtt-trail-trek-en-coeur-de-garonne.fr/" target="_blank" className="href-site">
+                    <button className="btn-site" > voir le site !</button>
+                </ExternalLink>
             </div>
 
             <div className="service ">

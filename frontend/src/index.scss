@@ -56,6 +56,30 @@ main {
     }
 }
 
+//btn
+.btn-submit {
+    color: $c-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $c-primary;
+    padding: 5px;
+    font-size: $default-font-size;
+    transition: all 0.2s;
+    border-radius: 10%;
+
+    &:hover {
+        background-color: $c-secondary;
+        color: $c-white;
+        box-shadow: 0 2rem 3rem rgba($c-black, 0.35);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 1rem 1.5rem rgba($c-black, 0.35);
+        transform: translateY(0);
+    }
+}
+
 //typo
 
 .paragraph {
