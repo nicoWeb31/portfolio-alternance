@@ -19,7 +19,7 @@ function App() {
                 <main className="main">
                     <Route exact path="/" component={HomePage} />
                     <Route path="/about" component={About} />
-                    <Route path='/service' component={Service} />
+                    <Route path='/projet' component={Service} />
                     <Route path="/contact" component={Contact} />
                 </main>
 

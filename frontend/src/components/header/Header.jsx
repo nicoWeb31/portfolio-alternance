@@ -21,7 +21,7 @@ const Header = () => {
                         </span>
                     </h1>
 
-                    <Link to='/service' className="btn btn-white btn-animated">
+                    <Link to='/projet' className="btn btn-white btn-animated">
                         {" "}
                         Réalisation
                     </Link>

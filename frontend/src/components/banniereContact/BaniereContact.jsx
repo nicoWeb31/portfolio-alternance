@@ -2,14 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./banniercontact.scss";
 
-const BaniereContact = () => {
+const BaniereContact = ({ message, btnMessage}) => {
     return (
         <div className="homeBanniere">
             <div className="u-center-text">
                 <h3 className="homeBanniere__heading ">
-                    Demarrer un nouveau projet ?
+                    {message}
                 </h3>
-            <Link className="btn btn-white btn-animated"> Me Contacter !</Link>
+                {
+                    btnMessage && <Link to='/contact' className="btn btn-white btn-animated"> {btnMessage}</Link>
+                }
+            
             </div>
         </div>
     );

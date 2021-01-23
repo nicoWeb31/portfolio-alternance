@@ -1,16 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./compService.style.scss";
 import disign from "../../img/service/ui.jpg";
 import web from "../../img/service/web.jpg";
 import app from "../../img/service/app.jpg";
 import net from "../../img/service/net.jpg";
 import mern from "../../img/service/mern.jpg";
+import GitHubApi from "../gitHubApi/GitHubApi";
+
+import githubService from "../../service/ApiGithub";
+import Spinner from "../spinner/Spinner";
 
 const CompService = () => {
+    const [user, setUser] = useState({});
+    const [loading, setLading] = useState(false);
+
+    useEffect(() => {
+        fetchUser("nicoWeb31");
+    }, []);
+
+    const fetchUser = async (name) => {
+        setLading(true);
+        try {
+            await githubService.find(name).then((response) => {
+                console.log(response.data);
+                setUser(response.data);
+            });
+        } catch (err) {
+            console.log(err.response);
+        }
+        setLading(false);
+    };
+
     return (
         <div className="servCom">
             <div className="u-center-text">
-                <h3 className="heading-secondary ">Service / Competence</h3>
+                <h3 className="heading-secondary ">Projet / Competence</h3>
+            </div>
+
+            <div className="service ">
+                <div className="service__text">
+                    {loading ? (
+                        <Spinner />
+                    ) : (
+                        <GitHubApi user={user} laoding={loading} className ="servCom"/>
+                    )}
+                </div>
             </div>
 
             <div className="service ">
@@ -312,6 +346,15 @@ const CompService = () => {
                         />
                     </div>
                 </div>
+
+                <div className="service__text">
+                    {loading ? (
+                        <Spinner />
+                    ) : (
+                        <GitHubApi user={user} laoding={loading}/>
+                    )}
+                </div>
+
             </div>
         </div>
     );

@@ -7,6 +7,7 @@ import { Field, reduxForm } from "redux-form";
 
 import "./contact.style.scss";
 import Reseau from "../../components/reseau/Reseau";
+import BaniereContact from "../../components/banniereContact/BaniereContact";
 //_________________________________render input______________________________________
 
 const renderError = (meta) => {
@@ -110,6 +111,7 @@ const Contact = ({ history, handleSubmit }) => {
         <div className="contact">
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary">vous pouvez me contacter </h2>
+                    <BaniereContact message=" 06-63-32-38-36"/>
             </div>
             <div className="spin">
                 {loading && <Spinner message="" />}

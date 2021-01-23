@@ -1,6 +1,6 @@
 import React from "react";
 import "./homepage.style.scss";
-import me from "../../img/homeN/me.jpg";
+import me from "../../img/homeN/me.png";
 import code from "../../img/homeN/code.jpg";
 
 import bgVideo from "../../img/homeN/Laptop.mp4";
@@ -68,7 +68,7 @@ const HomePage = () => {
                         </figure>
                         <div className="presentation__text">
                             <h3 className="heading-tertiary u-margin-bottom-small">
-                                Ce que je propose ?
+                                Pourquoi l'alternace ? pourquoi l'ux?
                             </h3>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
@@ -92,7 +92,7 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
-        <BaniereContact/>
+        <BaniereContact message=" En savoir plus sur moi ?" btnMessage="Me Contacter !"/>
         <CompetenceService/>
 
         </>

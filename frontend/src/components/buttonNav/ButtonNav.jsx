@@ -38,12 +38,12 @@ const ButtonNav = () => {
                     </li>
                     <li className="navigation__item">
                         <Link
-                            to="/service"
+                            to="/projet"
                             className="navigation__link"
                             onClick={() => setToggle(false)}
                         >
                             {" "}
-                            Service
+                            Projet-Compétence
                         </Link>
                     </li>
                     <li className="navigation__item">
