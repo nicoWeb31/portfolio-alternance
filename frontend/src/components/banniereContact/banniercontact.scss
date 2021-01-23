@@ -1,0 +1,19 @@
+@import "../../variable";
+
+.homeBanniere {
+    background-image: linear-gradient(to right, $c-primary, $c-tertiary);
+    padding: 3rem;
+
+    &__heading {
+        color: $c-white;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+
+        font-weight: 400;
+        letter-spacing: .8rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+
+        text-shadow: 0.4rem 0.3rem 0 $c-black;
+    }
+}

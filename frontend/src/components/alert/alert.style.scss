@@ -1,0 +1,15 @@
+@import '../../variable';
+
+.alert{
+width: 100%;
+font-size:2rem;
+text-align: center;
+}
+
+.success{
+    background-color:$c-success;
+}
+
+.danger{
+    background-color:$c-danger;
+}

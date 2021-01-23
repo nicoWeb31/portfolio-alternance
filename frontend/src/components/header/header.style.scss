@@ -1,0 +1,130 @@
+@import "../../variable";
+@import "../../keyFrame.scss";
+
+.header {
+    z-index: 10;
+    height: 90vh;
+    background-image: linear-gradient(
+            96deg,
+            rgba(2, 0, 36, 0.6) 0%,
+            rgba(18, 18, 92, 0.6) 35%,
+            rgba(29, 147, 171, 0.6) 100%
+        ),
+        url("../../img/imgcover.jpg");
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+
+    &__logo {
+        color: $c-white;
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+    }
+
+    .heading-primary {
+        color: $c-white;
+        text-transform: uppercase;
+        /* bug de tranblement */
+        backface-visibility: hidden;
+
+        &--main {
+            display: block;
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: 2.3rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            animation-name: moveInLeft;
+            animation-duration: 2s;
+            /* animation-delay:1s;
+            animation-duration: 3; */
+            animation-timing-function: ease-in;
+            text-shadow: 0.4rem 0.3rem 0 $c-black;
+        }
+
+        &--secondary {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 1.5rem;
+            text-align: center;
+            animation-name: delaDroite;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            text-shadow: 0.4rem 0.3rem 0 $c-black;
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+.text-box {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.btn {
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all 0.2s;
+        position: relative;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 2rem 3rem rgba($c-black, 0.4);
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 1rem 1.5rem rgba($c-black, 0.4);
+    }
+
+    &-white {
+        background-color: $c-white;
+        color: $c-primary;
+        text-align: center;
+        &::after {
+            background-color: $c-white;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+    }
+
+    &-animated {
+        /* animation-name: fromBottom;
+        animation-duration: 2s; */
+        animation: fromBottom 2s ease-out 0.75s;
+        animation-fill-mode: backwards;
+    }
+}

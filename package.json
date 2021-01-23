@@ -1,0 +1,34 @@
+{
+  "name": "startmern",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "base de demarage pour projet Mern stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node back/server",
+    "server": "nodemon back/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoWeb31/Starter-Mern.git"
+  },
+  "author": "nicolas riot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoWeb31/Starter-Mern/issues"
+  },
+  "homepage": "https://github.com/nicoWeb31/Starter-Mern#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.2"
+  }
+}

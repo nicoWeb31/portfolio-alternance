@@ -1,0 +1,139 @@
+@import "./variable";
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+/* 16px by default,  declaration puis on joue avec les rems ex.... */
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    /* font-size:16 px; */
+    /* font-size: 1.6 rem; */
+    line-height: 1.7;
+    color: $c-black;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: -15vh;
+    height: auto;
+}
+
+//btn
+.btn-text {
+    &:link,
+    &:visited {
+        color: $c-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $c-primary;
+        padding: 3px;
+        font-size: $default-font-size;
+        transition: all 0.2s;
+        border-radius: 10%;
+    }
+
+    &:hover {
+        background-color: $c-secondary;
+        color: $c-white;
+        box-shadow: 0 2rem 3rem rgba($c-black, 0.35);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 1rem 1.5rem rgba($c-black, 0.35);
+        transform: translateY(0);
+    }
+}
+
+//typo
+
+.paragraph {
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.heading-secondary {
+    padding-bottom: 8rem;
+    padding-top: 12rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $c-primary, $c-tertiary);
+    display: inline;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.2s;
+    letter-spacing: 1.5px;
+    display: inline-block;
+
+    // &:hover {
+    //     transform: skewY(2deg) skewX(2deg) scale(1.1);
+    //     text-shadow: 0.5rem 1rem 2rem rgba($c-black, 0.5);
+    // }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+///utimity
+
+.u-center-text {
+    text-align: center;
+}
+
+.u-padding-big {
+    padding: 8rem;
+}
+
+.u-padding-medium {
+    padding: 4rem;
+}
+
+.u-padding-small {
+    padding: 1.5rem;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem;
+}
+.u-margin-bottom-medium {
+    margin-bottom: 8rem;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 8rem;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

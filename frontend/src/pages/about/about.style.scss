@@ -1,0 +1,45 @@
+@import "../../variable";
+.about {
+    background-color: $c-color-grey;
+    .photoCol {
+        .composition {
+            position: relative;
+            height: 50rem;
+            &__photo {
+                width: 55%;
+                box-shadow: 0 1.5rem 4rem rgba($c-black, 0.4);
+                border-radius: 2px;
+                margin: 2px;
+                position: absolute;
+                z-index: 22;
+                transition: all 0.3s;
+                outline-offset: 1rem;
+
+                &--p1 {
+                    right: 3.5rem;
+                    top: -2rem;
+                }
+
+                &--p2 {
+                    left: 3.5rem;
+                    top: 2rem;
+                }
+
+                &--p3 {
+                    left: 20%;
+                    top: 10rem;
+                }
+
+                &:hover {
+                    outline: 1.5rem solid $c-secondary;
+                    transform: scale(1.05) translateY(-0.5rem);
+                    box-shadow: 0 2rem 5rem rgba($c-black, 0.6);
+                    z-index: 33;
+                }
+            }
+            &:hover &__photo:not(::hover) {
+                transform: scale(0.4);
+            }
+        }
+    }
+}

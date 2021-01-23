@@ -1,0 +1,35 @@
+@import '../../mixin.scss';
+
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-container{
+    @include flexCenter(column);
+}
+.loader {
+
+    margin-top: 1.6rem;
+    border-top: 1rem solid #413fc7;
+    border-right: 1rem solid rgba(136, 136, 136, 0.2);
+    border-bottom: 1rem solid rgba(136, 136, 136, 0.2);
+    border-left: 1rem solid rgba(136, 136, 136, 0.2);
+    animation: spinner 1s linear infinite;
+    border-radius: 50%;
+    width: 16rem;
+    height: 16rem;
+}
+.loading-text {
+    margin-top: 1.6rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: #888;
+}

@@ -1,0 +1,37 @@
+@import "../../variable";
+
+.competence {
+    background-color: $c-color-grey;
+
+    &__card {
+        width: 75%;
+        margin: 2rem auto;
+        background-color: rgba($c-white, 0.8);
+        box-shadow: 0 3rem 6rem rgba($c-black, 0.4);
+        border-radius: 5px;
+        font-size: 1.5rem;
+        padding: 4rem;
+        transform: skewX(-4deg);
+    }
+
+    &__text {
+        transform: skewX(4deg);
+    }
+
+}
+
+.headingBox{
+    border-bottom: 1px solid $c-black;
+}
+
+
+
+
+@media (max-width:740px){
+
+    .competence__card{
+        
+        transform: skewX(-0deg);
+    }
+
+}
