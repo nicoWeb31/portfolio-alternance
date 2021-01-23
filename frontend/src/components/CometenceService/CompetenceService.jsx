@@ -13,11 +13,21 @@ const CompetenceService = () => {
                     <div className="competence__card">
                         <div className="competence__text">
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">
-                                Conception - disign
+                                Conception
+                            </h3>
+                            <p>Conception d'application web et web mobile.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-3  col-12">
+                    <div className="competence__card">
+                        <div className="competence__text">
+                            <h3 className="heading-tertiary u-margin-bottom-small headingBox">
+                                Développement de site web.
                             </h3>
                             <p>
-                                conception et disign d'application web et web
-                                mobile, 
+                                Développement, intégration graphique de site
+                                internet. Base de données sql et nosql(moongodb)
                             </p>
                         </div>
                     </div>
@@ -26,12 +36,11 @@ const CompetenceService = () => {
                     <div className="competence__card">
                         <div className="competence__text">
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">
-                                Devellopement site web.
+                                Disign
                             </h3>
                             <p>
-                                devellopement , creation de site internet,
-                                vitrine, e-commerce ou toute sorte d'application
-                                web.
+                                Création de wirefram, travail sur charte
+                                graphique.
                             </p>
                         </div>
                     </div>
@@ -40,20 +49,12 @@ const CompetenceService = () => {
                     <div className="competence__card">
                         <div className="competence__text">
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">
-                                Appication web mobile
-                            </h3>
-                            <p>devellopement d'application mobile</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-3  col-12">
-                    <div className="competence__card">
-                        <div className="competence__text">
-                            <h3 className="heading-tertiary u-margin-bottom-small headingBox">
-                                Operation systemes
+                                Un brin devops
                             </h3>
                             <p>
-                                Mise en production de votre projet,maintenance
+                                Je suis assez à l'aise avec les lignes de
+                                commande, bonne expérience sur Linux, git, et un
+                                peu docker.
                             </p>
                         </div>
                     </div>

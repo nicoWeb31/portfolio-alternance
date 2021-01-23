@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./compService.style.scss";
-import { ExternalLink } from 'react-external-link';
+import { ExternalLink } from "react-external-link";
 import web from "../../img/service/web.jpg";
-import app from "../../img/service/app.jpg";
+import app from "../../img/contact.jpg";
 import net from "../../img/service/net.jpg";
 import mern from "../../img/service/mern.jpg";
 import GitHubApi from "../gitHubApi/GitHubApi";
 
 import githubService from "../../service/ApiGithub";
 import Spinner from "../spinner/Spinner";
-
 
 const CompService = () => {
     const [user, setUser] = useState({});
@@ -39,102 +38,214 @@ const CompService = () => {
             </div>
 
 
+            {/* ____________________________________________________________________________________________________ */}
             <div className="service vtt ">
                 <div className="row">
                     <div className="col-6">
-                <figure className="service__shape">
-                    <img src="https://aprc.it/api/200x125/http://vtt-trail-trek-en-coeur-de-garonne.fr/" alt="disign" className="service__img" />
-                </figure>
-                <div className="service__text">
-                    <h3 className="heading-tertiary u-margin-bottom-small">
-                        Vtt Trail Trek en coeur de garonne
-                    </h3>
-                    <p>Conception de votre site internet pour une association sportive.</p>
-                    <ul>
-                        <li>Cahier des charges.</li>
-                        <li>Conception et creation du site de A à Z.</li>
-                        <li>Disign du site,maquetage,logo, wirefram...</li>
-                        <li>Mise en production, maintenace</li>
-
-
-                    </ul>
-                </div>
-
-
+                        <figure className="service__shape">
+                            <img
+                                src="https://aprc.it/api/200x125/http://vtt-trail-trek-en-coeur-de-garonne.fr/"
+                                alt="disign"
+                                className="service__img"
+                            />
+                        </figure>
+                        <div className="service__text">
+                            <h3 className="heading-tertiary u-margin-bottom-small">
+                                Vtt Trail Trek en coeur de garonne
+                            </h3>
+                            <p>
+                                Conception d'un site internet pour une
+                                association sportive.
+                            </p>
+                            <ul>
+                                <li>Cahier des charges.</li>
+                                <li>
+                                    Conception et creation du site de A à Z.
+                                </li>
+                                <li>
+                                    Disign du site,maquetage,logo, wirefram...
+                                </li>
+                                <li>Mise en production, maintenace</li>
+                            </ul>
+                        </div>
                     </div>
                     <div className="col-6">
-                        <h3 className="heading-tertiary u-margin-bottom-small">Stack technique :</h3>
+                        <h3 className="heading-tertiary u-margin-bottom-small">
+                            Stack technique :
+                        </h3>
                         <ul>
-                        <li>Html5,CSS3</li>
-                        <li>PHP, mysql</li>
-                        <li>Framwork : Symfony 4, Bootstrap 4, react </li>
-                        
-
-
-                    </ul>
+                            <li>Html5,CSS3</li>
+                            <li>PHP, mysql</li>
+                            <li>Framwork : Symfony 4, Bootstrap 4, react </li>
+                        </ul>
                     </div>
                 </div>
-                <hr/>
-                <p>Ce projet a etait realiser dans le cadre de ma formation de concepteur/dévelloppeur web. Réaliser entierement en autonomie, il a sevit de support a mon mémoire de fin d'etude.</p>
-                <ExternalLink href="https://vtt-trail-trek-en-coeur-de-garonne.fr/" target="_blank" className="href-site">
-                    <button className="btn-site" > voir le site !</button>
+                <hr />
+                <p>
+                    Ce projet a etait realiser dans le cadre de ma formation de
+                    concepteur/dévelloppeur web. Réaliser entierement en
+                    autonomie, il a sevit de support a mon mémoire de fin
+                    d'etude.
+                </p>
+                <ExternalLink
+                    href="https://vtt-trail-trek-en-coeur-de-garonne.fr/"
+                    target="_blank"
+                    className="href-site"
+                >
+                    <button className="btn-site"> voir le site !</button>
+                </ExternalLink>
+            </div>
+            {/* _______________________________________________________________________________________________ */}
+            <div className="service vtt ">
+                <div className="row">
+                    <div className="col-6">
+                        <figure className="service__shape">
+                            <img
+                                src="https://aprc.it/api/200x125/https://crwn-live-ecom-course.herokuapp.com/"
+                                alt="disign"
+                                className="service__img"
+                            />
+                        </figure>
+                        <div className="service__text">
+                            <h3 className="heading-tertiary u-margin-bottom-small">
+                                Pro-shop
+                            </h3>
+                            <p>
+                                Conception d'un site e-commerce dans le cadre
+                                d'un projet Udemy
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-6">
+                        <h3 className="heading-tertiary u-margin-bottom-small">
+                            Stack technique :
+                        </h3>
+                        <ul>
+                            <li>Html5,scss</li>
+                            <li>Node, mongodb</li>
+                            <li>react, hook , redux, stripe</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p>
+                    Ce projet a etait realiser dans le cadre de ma formation de
+                    concepteur/dévelloppeur web. Réaliser entierement en
+                    autonomie, il a sevit de support a mon mémoire de fin
+                    d'etude.
+                </p>
+                <ExternalLink
+                    href="https://crwn-live-ecom-course.herokuapp.com"
+                    target="_blank"
+                    className="href-site"
+                >
+                    <button className="btn-site"> voir le site !</button>
+                </ExternalLink>
+            </div>
+            {/* ______________________________________________________________________________________________________ */}
+            <div className="service vtt ">
+                <div className="row">
+                    <div className="col-6">
+                        <figure className="service__shape">
+                            <img
+                                src={net}
+                                alt="dev-web"
+                                className="service__img"
+                            />
+                        </figure>
+                        <div className="service__text">
+                            <h3 className="heading-tertiary u-margin-bottom-small">
+                                Search Github
+                            </h3>
+                            <p>
+                                Petite application de recherche utilisateur sur
+                                Github.
+                            </p>
+                            <ul>
+                                <li>
+                                    Conception et creation du site de A à Z.
+                                </li>
+                                <li>
+                                    Disign du site,maquetage,logo, wirefram...
+                                </li>
+                                <li>
+                                    Mise en production, maintenace, sur heroku
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-6">
+                        <h3 className="heading-tertiary u-margin-bottom-small">
+                            Stack technique :
+                        </h3>
+                        <ul>
+                            <li>Html5,Css3</li>
+                            <li></li>
+                            <li>react, api</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p>
+                    Ce projet a etait realiser dans le but de reforcer mais
+                    connaissance sur react,et travailler sur un l'api
+                </p>
+                <ExternalLink
+                    href="https://githubsearchnico31.netlify.app/"
+                    target="_blank"
+                    className="href-site"
+                >
+                    <button className="btn-site"> voir le site !</button>
                 </ExternalLink>
             </div>
 
-            <div className="service ">
-                <figure className="service__shape">
-                    <img src={web} alt="dev-web" className="service__img" />
-                </figure>
-                <div className="service__text">
-                    <h3 className="heading-tertiary u-margin-bottom-small">
-                        Developpement application web
-                    </h3>
-                    <p>
-                        Developpement de votre application web en fonctoin du
-                        cahier des charges.
-                    </p>
-                    <ul>
-                        <li>Stack modern (node,express,react,mongodb)</li>
-                        <li>Htm5,Css3,javascript ECMAScript 6 </li>
-                        <li>composant metier.</li>
-                        <li>Responsive disigne</li>
-                    </ul>
+            {/* _____________________________________________________________________________________________________ */}
+
+            <div className="service vtt ">
+                <div className="row">
+                    <div className="col-6">
+                        <figure className="service__shape">
+                            <img
+                                src={app}
+                                alt="dev-web"
+                                className="service__img"
+                            />
+                        </figure>
+                        <div className="service__text">
+                            <h3 className="heading-tertiary u-margin-bottom-small">
+                                Mon portfolio
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    Conception et creation du site de A à Z.
+                                </li>
+                                <li>
+                                    Disign du site,maquetage,logo, wirefram...
+                                </li>
+                                <li>Mise en production, maintenace </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-6">
+                        <h3 className="heading-tertiary u-margin-bottom-small">
+                            Stack technique :
+                        </h3>
+                        <ul>
+                            <li>Html5,scss</li>
+                            <li>Node, mongodb, express</li>
+                            <li>react,redux, hook</li>
+                        </ul>
+                    </div>
                 </div>
+                <hr />
+                <p>
+                    vous êtes ici !
+                </p>
+
             </div>
 
-            <div className="service ">
-                <figure className="service__shape">
-                    <img src={app} alt="dev-web" className="service__img" />
-                </figure>
-                <div className="service__text">
-                    <h3 className="heading-tertiary u-margin-bottom-small">
-                        Developpement application web
-                    </h3>
-                    <p>Developpement d'application mobile en react native.</p>
-                    <ul>
-                        <li>Conception</li>
-                        <li>Developpement modern avec React Native.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className="service ">
-                <figure className="service__shape">
-                    <img src={net} alt="dev-web" className="service__img" />
-                </figure>
-                <div className="service__text">
-                    <h3 className="heading-tertiary u-margin-bottom-small">
-                        Administration système.
-                    </h3>
-                    <p>De la mise en production, maintenance.</p>
-                    <ul>
-                        <li>Mise en production sur serveur dedié.</li>
-                        <li>Seo, optimisation du referencement</li>
-                        <li>verisioning</li>
-                        <li>Maintenance</li>
-                    </ul>
-                </div>
-            </div>
+            {/* ___________________________________________________________________________________________________________ */}
 
             <div className="service service--comp ">
                 <h3 className="heading-tertiary u-margin-bottom-small competenceTitle">
@@ -365,13 +476,15 @@ const CompService = () => {
                 </div>
 
                 <div className="service__text">
+                    <h3 className="text-center mt-5">
+                        Plus de projet , réalisation :
+                    </h3>
                     {loading ? (
                         <Spinner />
                     ) : (
-                        <GitHubApi user={user} laoding={loading}/>
+                        <GitHubApi user={user} laoding={loading} />
                     )}
                 </div>
-
             </div>
         </div>
     );
