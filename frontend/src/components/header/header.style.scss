@@ -69,7 +69,6 @@
     top: 40%;
     transform: translate(-50%, -50%);
     text-align: center;
-
 }
 
 .btn {
@@ -127,4 +126,19 @@
         animation: fromBottom 2s ease-out 0.75s;
         animation-fill-mode: backwards;
     }
+}
+
+@media screen and (max-width: 680px) {
+    .heading-primary--main {
+        font-size: 2rem !important;
+        letter-spacing: 1rem !important;
+
+    }
+
+    .heading-primary--secondary {
+        font-size: 1.5rem !important;
+
+        letter-spacing:0.2rem !important;
+    }
+
 }
