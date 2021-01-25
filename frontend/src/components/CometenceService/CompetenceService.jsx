@@ -23,11 +23,11 @@ const CompetenceService = () => {
                     <div className="competence__card">
                         <div className="competence__text">
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">
-                                Développement de site web.
+                                Développement.
                             </h3>
                             <p>
                                 Développement, intégration graphique de site
-                                internet. Base de données sql et nosql(moongodb)
+                                internet(Html5,Css3,react....). Base de données sql et nosql(moongodb)
                             </p>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const CompetenceService = () => {
                             </h3>
                             <p>
                                 Création de wirefram, travail sur charte
-                                graphique.
+                                graphique,logo,ex....
                             </p>
                         </div>
                     </div>

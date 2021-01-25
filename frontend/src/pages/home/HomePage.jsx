@@ -38,21 +38,10 @@ const HomePage = () => {
                                 Qui suis-je ?
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Facilis alias, quos quis
-                                soluta dolorem nesciunt fugiat aut rem
-                                voluptatibus exercitationem eaque sapiente vitae
-                                aliquid, ad officiis accusantium autem
-                                consequuntur animi! Omnis voluptatum vero,
-                                sapiente est libero deleniti eaque quos
-                                reprehenderit nostrum deserunt quaerat ducimus
-                                minima recusandae nesciunt assumenda corporis
-                                rerum laudantium ea quo consequuntur error earum
-                                quae optio. Sed, dolorem? Possimus, cum illum
-                                vel eum fugit molestiae autem eaque commodi
-                                nulla culpa rerum vitae ducimus amet veniam non
-                                earum? Perferendis eum quaerat error porro
-                                libero sunt illum architecto molestias! Laborum!
+                                Bonjour, je m'appelle riot nicolas, je suis en reconvertion professionnel depuis 3 ans.Aprés un bilan de compétence je me suis lancer dans une licence en distentile de develloper concepteur d'application web.
+                                Aprés l'aprentissage des base du web (html5 css3) et l'apprentissage du php (+poo), j'ai realiser mon premier gros projet sous symfony4, projet qui m'a servit de support a la soutenance de ma lience.
+                                Depuis, je monte en compétence sur React et Node, Javascript étant un langage que j'adore utiliser, et tellement puissant 🙂 .
+                                
                             </p>
                         </div>
                     </div>
@@ -71,21 +60,9 @@ const HomePage = () => {
                                 Pourquoi l'alternace ? pourquoi l'ux?
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Facilis alias, quos quis
-                                soluta dolorem nesciunt fugiat aut rem
-                                voluptatibus exercitationem eaque sapiente vitae
-                                aliquid, ad officiis accusantium autem
-                                consequuntur animi! Omnis voluptatum vero,
-                                sapiente est libero deleniti eaque quos
-                                reprehenderit nostrum deserunt quaerat ducimus
-                                minima recusandae nesciunt assumenda corporis
-                                rerum laudantium ea quo consequuntur error earum
-                                quae optio. Sed, dolorem? Possimus, cum illum
-                                vel eum fugit molestiae autem eaque commodi
-                                nulla culpa rerum vitae ducimus amet veniam non
-                                earum? Perferendis eum quaerat error porro
-                                libero sunt illum architecto molestias! Laborum!
+                                Apres cette expérience de la formation en distanciel, et l'obtention de ma licence. Pourquoi as continuer.Ayant survoler l'ux design et voulant vraiment en aprendre Plus
+                                
+
                             </p>
                         </div>
                     </div>
