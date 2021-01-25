@@ -38,9 +38,9 @@ const HomePage = () => {
                                 Qui suis-je ?
                             </h3>
                             <p>
-                                Bonjour, je m'appelle riot nicolas, je suis en reconvertion professionnel depuis 3 ans.Aprés un bilan de compétence je me suis lancer dans une licence en distentile de develloper concepteur d'application web.
-                                Aprés l'aprentissage des base du web (html5 css3) et l'apprentissage du php (+poo), j'ai realiser mon premier gros projet sous symfony4, projet qui m'a servit de support a la soutenance de ma lience.
-                                Depuis, je monte en compétence sur React et Node, Javascript étant un langage que j'adore utiliser, et tellement puissant 🙂 .
+                                Bonjour, je m'appelle Nicolas Riot. Je suis en reconvertion professionnelle depuis maintenant 3 ans. Suite à un bilan de compétences je me suis lancé dans une licence en distanciel de développeur-concepteur d'application web.
+                                Après l'apprentissage des bases du web (html5 css3) et du php (+poo), j'ai réalisé mon premier projet important sous Symfony4, projet qui m'a servit de support à la soutenance de ma licence.
+                                Depuis l'obtention de mon diplôme, je monte en compétence sur React et Node; Javascript étant un langage que j'adore utiliser et que je trouve tellement puissant 🙂.
                                 
                             </p>
                         </div>
@@ -57,11 +57,13 @@ const HomePage = () => {
                         </figure>
                         <div className="presentation__text">
                             <h3 className="heading-tertiary u-margin-bottom-small">
-                                Pourquoi l'alternace ? pourquoi l'ux?
+                                Pourquoi l'UX ? Pourquoi en alternance ?
                             </h3>
                             <p>
-                                Apres cette expérience de la formation en distanciel, et l'obtention de ma licence. Pourquoi as continuer.Ayant survoler l'ux design et voulant vraiment en aprendre Plus
-                                
+                                Suite à l'obtention de ma licence et fort de mon expérience de travail en distanciel, je me suis dis : Pourquoi ne pas continuer sur ma lancée ? Ayant survolé l'UX design et voulant vraiment en apprendre plus sur ce domaine, j'ai décidé de postuler chez OpenClassroom pour le master d'UX designer.
+                                Aprés réflexion et souhaitant par la même occasion engranger de l'expérience au sein d'une entreprise, j'ai fait le choix de l'alternance. Au rythme proposé par OpenClassroom de 4 jours en entreprise et 1 jour en formation en ligne, cela permet de maintenir un projet sur la continuité au fil des semaines, sans interruptions.
+                                De plus cette formation est composée à 100% par des projets concrets, rien de plus formateur !
+
 
                             </p>
                         </div>
