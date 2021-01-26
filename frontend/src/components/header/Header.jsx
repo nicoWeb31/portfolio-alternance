@@ -17,7 +17,7 @@ const Header = () => {
                             Riot Nicolas
                         </span>
                         <span className="heading-primary--secondary">
-                            Recherche alternace UX disigner(Bac +5)
+                            Recherche alternance UX designer(Bac +5)
                         </span>
                     </h1>
 

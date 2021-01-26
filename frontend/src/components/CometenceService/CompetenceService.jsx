@@ -5,7 +5,7 @@ const CompetenceService = () => {
     return (
         <div className="competence">
             <div className="u-center-text">
-                <h3 className="heading-secondary">Service / Competence</h3>
+                <h3 className="heading-secondary">Services / Compétences</h3>
             </div>
 
             <div className="row">
@@ -15,19 +15,9 @@ const CompetenceService = () => {
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">
                                 Conception
                             </h3>
-                            <p>Conception d'application web et web mobile.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-3  col-12">
-                    <div className="competence__card">
-                        <div className="competence__text">
-                            <h3 className="heading-tertiary u-margin-bottom-small headingBox">
-                                Développement.
-                            </h3>
                             <p>
-                                Développement, intégration graphique de site
-                                internet(Html5,Css3,react....). Base de données sql et nosql(moongodb)
+                                Conception d'application web et web mobile
+                                (uml,merise), intégration
                             </p>
                         </div>
                     </div>
@@ -36,11 +26,25 @@ const CompetenceService = () => {
                     <div className="competence__card">
                         <div className="competence__text">
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">
-                                Disign
+                                Design
                             </h3>
                             <p>
                                 Création de wirefram, travail sur charte
-                                graphique,logo,ex....
+                                graphique, logo, etc...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-3  col-12">
+                    <div className="competence__card">
+                        <div className="competence__text">
+                            <h3 className="heading-tertiary u-margin-bottom-small headingBox">
+                                Développement
+                            </h3>
+                            <p>
+                                Développement, intégration graphique de site
+                                internet(Html5, Css3, react....). Base de
+                                données sql et nosql(moongodb)
                             </p>
                         </div>
                     </div>
@@ -52,9 +56,8 @@ const CompetenceService = () => {
                                 Un brin devops
                             </h3>
                             <p>
-                                Je suis assez à l'aise avec les lignes de
-                                commande, bonne expérience sur Linux, git, et un
-                                peu docker.
+                                Je suis à l'aise avec les lignes de commandes,
+                                bonne expérience sur Linux, git et des notions de docker.
                             </p>
                         </div>
                     </div>

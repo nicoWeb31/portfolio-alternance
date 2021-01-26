@@ -41,7 +41,7 @@ const Footer = () => {
                         <div className="footer__contact--adress ">
                             <i class="fa fa-map-marker footer__icone" ></i>
                             <p>
-                                <span>Impasse Larribeau</span>31260 Montespan
+                                <span>Impasse Larribeau</span> - 31260 Montespan
                             </p>
                         </div>
                         <div className="footer__contact--phone">
@@ -66,9 +66,10 @@ const Footer = () => {
                     </div>
 
                     <p className="footer__copyright">
-                        N'hesitez pas a me <Link to='/contact' className="footer__link"> contacter .</Link>
-                        Copyright &copy; by Riot Nicolas 2020.
+                        N'hésitez pas à me <Link to='/contact' className="footer__link"> contacter.</Link>
+                        
                     </p>
+                    <p className="text-center">Copyright &copy; by Riot Nicolas 2020.</p>
                 </div>
             </div>
         </div>
