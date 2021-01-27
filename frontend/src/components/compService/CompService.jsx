@@ -41,13 +41,13 @@ const CompService = () => {
             <div className="service vtt">
                 <div className="row ">
                     <div className="col-md-2 col-12 _blockImg">
-                        <figure className="service__shape">
+
                             <img
                                 src="https://aprc.it/api/200x125/http://vtt-trail-trek-en-coeur-de-garonne.fr/"
                                 alt="disign"
                                 className="service__img"
                             />
-                        </figure>
+
                     </div>
                     <div className="col-md-6">
                         <div className="service__text">
@@ -100,13 +100,13 @@ const CompService = () => {
             <div className="service pro-shop ">
                 <div className="row">
                     <div className="col-md-2 col-12 _blockImg">
-                        <figure className="service__shape">
+
                             <img
                                 src="https://aprc.it/api/200x125/https://crwn-live-ecom-course.herokuapp.com/"
                                 alt="disign"
                                 className="service__img"
                             />
-                        </figure>
+
                     </div>
                     <div className="col-md-6 col-12">
                         <div className="service__text">
@@ -149,13 +149,13 @@ const CompService = () => {
             <div className="service git ">
                 <div className="row _row">
                     <div className="col-md-2 col-12 _blockImg">
-                        <figure className="service__shape">
+
                             <img
                                 src={net}
                                 alt="dev-web"
                                 className="service__img"
                             />
-                        </figure>
+
                     </div>
                     <div className="col-md-6 col-12">
                         <div className="service__text">
@@ -209,13 +209,12 @@ const CompService = () => {
             <div className="service portofolio"> 
                 <div className="row">
                 <div className="col-md-2 col-12 _blockImg">
-                        <figure className="service__shape">
+
                             <img
                                 src={app}
                                 alt="dev-web"
                                 className="service__img"
                             />
-                        </figure>
 
                     </div>
                     <div className="col-md-6 col-12">

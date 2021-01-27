@@ -23,7 +23,7 @@ const GitHubApi = ({user,loading}) => {
 
 
             <div className="container p-4 gitBox" >
-                <div className="jumbotron">
+                <div className="jumbotron __git-content">
                     <h1 className="text-center p-3 mb-5">“Github - Info”</h1>
                     <div className="row">
                     

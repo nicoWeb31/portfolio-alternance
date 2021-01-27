@@ -3,6 +3,7 @@
 .contact {
     background-color: $c-color-grey;
     padding-bottom: 10rem;
+    margin: 0rem;
 }
 
 .formulaire {
@@ -17,8 +18,7 @@
 
     background-size: 100%;
     margin: 5rem 10rem;
-    height: 80rem;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 1.5rem 5rem rgba($c-black, 0.9);
 
     h4 {
@@ -85,7 +85,6 @@
     outline: none;
     box-shadow: 0 1rem 2rem rgba($c-black, 0.1);
     border-bottom: 3px solid $c-danger;
-
 }
 
 .inputOK {
@@ -94,9 +93,7 @@
     outline: none;
     box-shadow: 0 1rem 2rem rgba($c-black, 0.1);
     border-bottom: 3px solid $c-success;
-
 }
-
 
 .spin {
     margin: 0 auto;
@@ -108,14 +105,15 @@
     color: rgb(133, 45, 45);
 }
 
-@media (max-width: 900px) {
-    .form {
-        width: 100%;
-        padding: 4rem;
-    }
+@media screen and (max-width: 768px) {
 
+
+    .form {
+        padding: 0.5rem;
+        width: 100%;
+    }
     .formulaire {
-        // background-image: url(../../img/contact.jpg);
+        margin: 1rem 3rem;
         background-image: linear-gradient(
                 105deg,
                 rgba($c-white, 0.8) 0%,
@@ -123,5 +121,23 @@
                 transparent 90%
             ),
             url(../../img/contact.jpg);
+    }
+}
+
+@media screen and(max-width: 900px) {
+    .formulaire {
+        
+        background-image: linear-gradient(
+                105deg,
+                rgba($c-white, 0.8) 0%,
+                rgba($c-white, 0.9) 50%,
+                transparent 90%
+            ),
+            url(../../img/contact.jpg);
+    }
+
+    .form {
+        width: 100%;
+        padding: 3rem;
     }
 }

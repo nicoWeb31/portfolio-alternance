@@ -1,3 +1,11 @@
 .gitBox{
     color: black;
 }
+
+
+@media screen and (max-width: 680px) {
+    .__git-content{
+
+        margin: 1rem;
+    }
+}
