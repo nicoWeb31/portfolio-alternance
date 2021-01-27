@@ -8,7 +8,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30rem 70rem 70rem 70rem 60rem 160rem;
+    grid-template-rows: 30rem 70rem 70rem 70rem 60rem 150rem;
     gap: 0.5em 0.5px;
     grid-template-areas:
         "_titleBox _titleBox _titleBox _titleBox _titleBox _titleBox"
@@ -21,7 +21,6 @@
 
 .vtt {
     grid-area: vtt;
-    height: 100%;
 }
 
 ._titleBox {
