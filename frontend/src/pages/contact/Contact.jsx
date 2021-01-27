@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Spinner from "../../components/spinner/Spinner";
 import Alert from "../../components/alert/Alert";
 import { createMessage } from "../../redux/actions/massageAction";
-import { Field, reduxForm } from "redux-form";
+import { Field, reduxForm, reset } from "redux-form";
 
 import "./contact.style.scss";
 import Reseau from "../../components/reseau/Reseau";
@@ -17,10 +17,7 @@ const renderError = (meta) => {
 };
 
 const renderInput = (formProps) => {
-    // console.log(
-    //     "🚀 ~ file: Contact.jsx ~ line 29 ~ renderInput ~ formProps",
-    //     formProps.meta
-    // );
+
     return (
         <div className="form__group">
             <input
@@ -96,16 +93,15 @@ const Contact = ({ history, handleSubmit }) => {
 
     //_________________________________fonction______________________________________
     const onHandleSubmit = (formValue) => {
-        console.log(
-            "🚀 ~ file: Contact.jsx ~ line 75 ~ onHandleSubmit ~ formValue",
-            formValue
-        );
+
         const data = {
             name: formValue.name,
             email: formValue.email,
             message: formValue.message,
         };
         dispatch(createMessage(data));
+        dispatch(reset('messageForm'))
+
     };
     return (
         <div className="contact">
