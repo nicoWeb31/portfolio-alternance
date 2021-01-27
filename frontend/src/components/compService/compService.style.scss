@@ -1,13 +1,52 @@
 @import "../../variable";
+@import "../../mixin.scss";
 
 .servCom {
     padding-top: 2rem;
     padding-bottom: 1rem;
     background-color: $c-color-grey;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30rem 70rem 70rem 70rem 60rem 160rem;
+    gap: 0.5em 0.5px;
+    grid-template-areas:
+        "_titleBox _titleBox _titleBox _titleBox _titleBox _titleBox"
+        "vtt vtt vtt vtt vtt vtt"
+        "pro-shop pro-shop pro-shop pro-shop pro-shop pro-shop"
+        "git git git git git git"
+        "portofolio portofolio portofolio portofolio portofolio portofolio"
+        "competence competence competence competence competence competence";
+}
+
+.vtt {
+    grid-area: vtt;
+    height: 100%;
+}
+
+._titleBox {
+    grid-area: _titleBox;
+}
+
+.pro-shop{
+    grid-area: pro-shop;
+}
+
+.git{
+    grid-area: git;
+}
+
+.portofolio{
+    grid-area: portofolio;
+}
+
+.competence {
+    grid-area: competence;
 }
 
 .service {
     width: 75%;
+    height: auto;
     margin: 10rem auto;
     background-color: rgba($c-white, 0.8);
     box-shadow: 0 3rem 6rem rgba($c-black, 0.3);
@@ -55,7 +94,6 @@
     text-transform: uppercase;
 }
 
-
 .btn-site {
     color: $c-primary;
     display: block;
@@ -72,7 +110,7 @@
         color: $c-white;
         box-shadow: 0 2rem 3rem rgba($c-black, 0.35);
         transform: translateY(-2px);
-        text-decoration: none ;
+        text-decoration: none;
     }
 
     &:active {
@@ -91,5 +129,24 @@
 
     &:active {
         text-decoration: none;
+    }
+}
+
+@media (max-width: 840px) {
+    .servCom {
+        @include flexCenter(column);
+    }
+
+    .service {
+        transform: skewX(-0deg);
+        margin: 2rem !important;
+        width: 90%;
+
+        ._blockImg {
+            @include flexCenter(row);
+            @include flexCenter(column);
+
+            padding: 1.5rem;
+        }
     }
 }

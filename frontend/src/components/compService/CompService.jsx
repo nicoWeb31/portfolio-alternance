@@ -33,15 +33,14 @@ const CompService = () => {
 
     return (
         <div className="servCom">
-            <div className="u-center-text">
+            <div className="u-center-text _titleBox">
                 <h3 className="heading-secondary ">Projet / Competence</h3>
             </div>
 
-
             {/* ____________________________________________________________________________________________________ */}
-            <div className="service vtt ">
-                <div className="row">
-                    <div className="col-6">
+            <div className="service vtt">
+                <div className="row ">
+                    <div className="col-md-2 col-12 _blockImg">
                         <figure className="service__shape">
                             <img
                                 src="https://aprc.it/api/200x125/http://vtt-trail-trek-en-coeur-de-garonne.fr/"
@@ -49,6 +48,8 @@ const CompService = () => {
                                 className="service__img"
                             />
                         </figure>
+                    </div>
+                    <div className="col-md-6">
                         <div className="service__text">
                             <h3 className="heading-tertiary u-margin-bottom-small">
                                 Vtt Trail Trek en coeur de garonne
@@ -69,7 +70,7 @@ const CompService = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-4">
                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Stack technique :
                         </h3>
@@ -96,9 +97,9 @@ const CompService = () => {
                 </ExternalLink>
             </div>
             {/* _______________________________________________________________________________________________ */}
-            <div className="service vtt ">
+            <div className="service pro-shop ">
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-md-2 col-12 _blockImg">
                         <figure className="service__shape">
                             <img
                                 src="https://aprc.it/api/200x125/https://crwn-live-ecom-course.herokuapp.com/"
@@ -106,6 +107,8 @@ const CompService = () => {
                                 className="service__img"
                             />
                         </figure>
+                    </div>
+                    <div className="col-md-6 col-12">
                         <div className="service__text">
                             <h3 className="heading-tertiary u-margin-bottom-small">
                                 Pro-shop
@@ -116,7 +119,7 @@ const CompService = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-4 col-12">
                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Stack technique :
                         </h3>
@@ -143,9 +146,9 @@ const CompService = () => {
                 </ExternalLink>
             </div>
             {/* ______________________________________________________________________________________________________ */}
-            <div className="service vtt ">
-                <div className="row">
-                    <div className="col-6">
+            <div className="service git ">
+                <div className="row _row">
+                    <div className="col-md-2 col-12 _blockImg">
                         <figure className="service__shape">
                             <img
                                 src={net}
@@ -153,6 +156,8 @@ const CompService = () => {
                                 className="service__img"
                             />
                         </figure>
+                    </div>
+                    <div className="col-md-6 col-12">
                         <div className="service__text">
                             <h3 className="heading-tertiary u-margin-bottom-small">
                                 Search Github
@@ -161,7 +166,7 @@ const CompService = () => {
                                 Petite application de recherche utilisateur sur
                                 Github.
                             </p>
-                            <ul>
+                            <ul className="list">
                                 <li>
                                     Conception et creation du site de A à Z.
                                 </li>
@@ -174,13 +179,13 @@ const CompService = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-4 col-12">
                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Stack technique :
                         </h3>
                         <ul>
                             <li>Html5,Css3</li>
-                            <li></li>
+                            <li>Node</li>
                             <li>react, api</li>
                         </ul>
                     </div>
@@ -201,9 +206,9 @@ const CompService = () => {
 
             {/* _____________________________________________________________________________________________________ */}
 
-            <div className="service vtt ">
+            <div className="service portofolio"> 
                 <div className="row">
-                    <div className="col-6">
+                <div className="col-md-2 col-12 _blockImg">
                         <figure className="service__shape">
                             <img
                                 src={app}
@@ -211,6 +216,9 @@ const CompService = () => {
                                 className="service__img"
                             />
                         </figure>
+
+                    </div>
+                    <div className="col-md-6 col-12">
                         <div className="service__text">
                             <h3 className="heading-tertiary u-margin-bottom-small">
                                 Mon portfolio
@@ -227,7 +235,7 @@ const CompService = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-4 col-12" >
                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Stack technique :
                         </h3>
@@ -239,15 +247,12 @@ const CompService = () => {
                     </div>
                 </div>
                 <hr />
-                <p>
-                    vous êtes ici !
-                </p>
-
+                <p>vous êtes ici !</p>
             </div>
 
             {/* ___________________________________________________________________________________________________________ */}
 
-            <div className="service service--comp ">
+            <div className="service service--comp competence">
                 <h3 className="heading-tertiary u-margin-bottom-small competenceTitle">
                     Competence
                 </h3>
