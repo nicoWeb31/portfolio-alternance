@@ -43,7 +43,7 @@ const About = () => {
                         marque ou à ce marchand ?
                     </p>
 
-                    <Link to="/sevice" className="btn-text">
+                    <Link to="/projet" className="btn-text">
                         <i className="fas fa-arrow-right"></i>
                         plus...
                     </Link>

@@ -96,6 +96,11 @@
     }
 }
 
+.info-block{
+    @include flexCenter(row);
+
+}
+
 .footer__contact--phone,
 .footer__contact--mail,
 .footer__contact--adress {
@@ -108,6 +113,6 @@
     }
 
     .footer__link{
-        font-size:1rem !important;
+        font-size:0.9rem !important;
     }
 }

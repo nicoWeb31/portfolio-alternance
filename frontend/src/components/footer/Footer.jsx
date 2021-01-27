@@ -38,18 +38,18 @@ const Footer = () => {
                 </div>
                 <div className="col-12 col-md-12 col-xl-4 ">
                     <div className="footer__contact">
-                        <div className="footer__contact--adress ">
+                        <div className="footer__contact--adress info-block">
                             <i class="fa fa-map-marker footer__icone" ></i>
                             <p>
                                 <span>Impasse Larribeau</span> - 31260 Montespan
                             </p>
                         </div>
-                        <div className="footer__contact--phone">
+                        <div className="footer__contact--phone info-block">
                             <i class="fa fa-phone footer__icone" ></i>
                             <p>06.63.32.38.36</p>
                         </div>
-                        <div className="footer__contact--mail">
-                            <i class="fa fa-envelope footer__icone"></i>
+                        <div className="footer__contact--mail info-block">
+                            <i class="fa fa-envelope footer__icone "></i>
                             <p>
                                 <Link href="mailto:nico.riot@free.fr" className="footer__link">
                                     nico.riot@free.fr
