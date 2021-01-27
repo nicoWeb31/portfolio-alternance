@@ -102,7 +102,7 @@
     @include flexCenter(row);
 }
 
-@media (max-width: 840px) {
+@media screen and (max-width: 680px) {
     .footer__contact,.footer__iconeReseau {
         padding-top: 6rem;
     }
