@@ -10,8 +10,8 @@ const About = () => {
     return (
         <div className="about">
             <TitreSecondary>Développeur web Mern Stack</TitreSecondary>
-            <div className="row ">
-                <div className="col-md-6 col-12 u-padding-big">
+            <div className="rowGrid-about ">
+                <div className="g_block-text u-padding-big">
                     <h3 className="heading-tertiary u-margin-bottom-small">
                         Pour des projets clés en main!
                     </h3>
@@ -47,7 +47,7 @@ const About = () => {
                         plus...
                     </Link>
                 </div>
-                <div className="col-md-6 col-12 u-padding-horizontal-big photoCol">
+                <div className="g_block-img photoCol">
                     <div className="composition">
                         <img
                             src={seo}

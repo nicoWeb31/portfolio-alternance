@@ -1,4 +1,35 @@
 @import "../../variable";
+
+
+.rowGrid-about{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "txt img";
+
+    .g_block-text{
+        grid-area: txt;
+        margin: 3rem;
+        padding: 3rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .g_block-img{
+        grid-area: img;
+        margin:3rem;
+        padding: 3rem;
+        align-self: center;
+
+
+    }
+}
+
+
 .about {
     padding-top: 10rem;
     background-color: $c-color-grey;
@@ -43,4 +74,32 @@
             }
         }
     }
+}
+
+
+@media (max-width: 840px) {
+    
+    .rowGrid-about{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "txt"
+        "img"
+        ;
+
+        .g_block-img{
+            grid-area: img;
+            margin:1rem;
+            padding: 1rem;
+            align-self: center;
+    
+    
+        }
+
+
+    }
+    
+
 }

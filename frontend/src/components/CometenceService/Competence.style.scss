@@ -14,24 +14,31 @@
 
 .title {
     grid-area: title;
-    justify-items: center;
 
 }
 
 .dev {
     grid-area: dev;
+    align-self: center;
+    justify-self: center;
 }
 
 .conc {
     grid-area: conc;
+    align-self: center;
+    justify-self: center;
 }
 
 .des {
     grid-area: des;
+    align-self: center;
+    justify-self: center;
 }
 
 .ops {
     grid-area: ops;
+    align-self: center;
+    justify-self: center;
 }
 
 .competence {
@@ -59,19 +66,16 @@
 
 @media screen and (max-width: 680px) {
     .competence__card {
-
         transform: skewX(-0deg);
-        margin: auto;
-
     }
 
     .grid-container {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
         grid-template-areas:
             "title"
             "conc"
