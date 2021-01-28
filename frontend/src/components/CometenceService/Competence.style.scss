@@ -1,5 +1,39 @@
 @import "../../variable";
 
+.grid-container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 0px;
+    grid-template-areas:
+        "title title title title"
+        "conc des dev ops";
+}
+
+.title {
+    grid-area: title;
+    justify-items: center;
+
+}
+
+.dev {
+    grid-area: dev;
+}
+
+.conc {
+    grid-area: conc;
+}
+
+.des {
+    grid-area: des;
+}
+
+.ops {
+    grid-area: ops;
+}
+
 .competence {
     background-color: $c-color-grey;
 
@@ -17,30 +51,32 @@
     &__text {
         transform: skewX(4deg);
     }
-
 }
 
-.headingBox{
+.headingBox {
     border-bottom: 1px solid $c-black;
 }
 
-
-
-
-@media screen and (max-width: 680px){
-
-    .competence__card{
+@media screen and (max-width: 680px) {
+    .competence__card {
         display: flex;
         justify-content: center;
         transform: skewX(-0deg);
-        width: 70%;
-        padding:3rem;
-        margin: 2rem auto;
-        
+
     }
 
-    .cardContent{
-        padding:0;
+    .grid-container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+        grid-template-areas:
+            "title"
+            "conc"
+            "des"
+            "dev"
+            "ops";
     }
-
 }
