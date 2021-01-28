@@ -4,13 +4,12 @@ import "./about.style.scss";
 import seo from "../../img/about/search-engine-optimization-586422_1920.jpg";
 import hand from "../../img/about/hand-3108158_1920.jpg";
 import app from "../../img/about/apps-2558373_1920.jpg";
+import TitreSecondary from "../../components/titre/TitreSecondary";
 
 const About = () => {
     return (
         <div className="about">
-            <div className="u-center-text u-margin-bottom-big">
-                <h2 className="heading-secondary">Développeur web Mern Stack</h2>
-            </div>
+            <TitreSecondary>Développeur web Mern Stack</TitreSecondary>
             <div className="row ">
                 <div className="col-md-6 col-12 u-padding-big">
                     <h3 className="heading-tertiary u-margin-bottom-small">

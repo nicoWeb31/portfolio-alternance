@@ -1,0 +1,23 @@
+@import '../../variable';
+
+.heading-secondary {
+
+    padding-bottom: 8rem;
+    padding-top: 12rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $c-primary, $c-tertiary);
+    display: inline;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.2s;
+    letter-spacing: 1.5px;
+    display: inline-block;
+
+
+    // &:hover {
+    //     transform: skewY(2deg) skewX(2deg) scale(1.1);
+    //     text-shadow: 0.5rem 1rem 2rem rgba($c-black, 0.5);
+    // }
+}

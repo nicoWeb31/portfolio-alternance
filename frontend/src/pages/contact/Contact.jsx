@@ -8,6 +8,7 @@ import { Field, reduxForm, reset } from "redux-form";
 import "./contact.style.scss";
 import Reseau from "../../components/reseau/Reseau";
 import BaniereContact from "../../components/banniereContact/BaniereContact";
+import TitreSecondary from "../../components/titre/TitreSecondary";
 //_________________________________render input______________________________________
 
 const renderError = (meta) => {
@@ -17,7 +18,6 @@ const renderError = (meta) => {
 };
 
 const renderInput = (formProps) => {
-
     return (
         <div className="form__group">
             <input
@@ -93,22 +93,18 @@ const Contact = ({ history, handleSubmit }) => {
 
     //_________________________________fonction______________________________________
     const onHandleSubmit = (formValue) => {
-
         const data = {
             name: formValue.name,
             email: formValue.email,
             message: formValue.message,
         };
         dispatch(createMessage(data));
-        dispatch(reset('messageForm'))
-
+        dispatch(reset("messageForm"));
     };
     return (
         <div className="contact">
-            <div className="u-center-text u-margin-bottom-big">
-                <h2 className="heading-secondary">vous pouvez me contacter </h2>
-                    <BaniereContact message=" 06-63-32-38-36"/>
-            </div>
+            <TitreSecondary>vous pouvez me contacter</TitreSecondary>
+            <BaniereContact message=" 06-63-32-38-36" />
             <div className="spin">
                 {loading && <Spinner message="" />}
                 {/* {error && <Alert variant="danger">{error}</Alert>} */}

@@ -1,13 +1,11 @@
 import React from "react";
+import TitreSecondary from "../titre/TitreSecondary";
 import "./Competence.style.scss";
 
 const CompetenceService = () => {
     return (
         <div className="competence">
-            <div className="u-center-text">
-                <h3 className="heading-secondary">Services / Compétences</h3>
-            </div>
-
+            <TitreSecondary>Services / Compétences</TitreSecondary>
             <div className="row">
                 <div className="col-md-3  col-12">
                     <div className="competence__card">

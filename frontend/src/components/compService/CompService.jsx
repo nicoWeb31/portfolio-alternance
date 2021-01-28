@@ -9,6 +9,7 @@ import GitHubApi from "../gitHubApi/GitHubApi";
 
 import githubService from "../../service/ApiGithub";
 import Spinner from "../spinner/Spinner";
+import TitreSecondary from "../titre/TitreSecondary";
 
 const CompService = () => {
     const [user, setUser] = useState({});
@@ -33,21 +34,19 @@ const CompService = () => {
 
     return (
         <div className="servCom">
-            <div className="u-center-text _titleBox">
-                <h3 className="heading-secondary ">Projet / Competence</h3>
+            <div className="_titleBox">
+                <TitreSecondary>Projet / Competence</TitreSecondary>
             </div>
 
             {/* ____________________________________________________________________________________________________ */}
             <div className="service vtt">
                 <div className="row ">
                     <div className="col-md-2 col-12 _blockImg">
-
-                            <img
-                                src="https://aprc.it/api/200x125/http://vtt-trail-trek-en-coeur-de-garonne.fr/"
-                                alt="disign"
-                                className="service__img"
-                            />
-
+                        <img
+                            src="https://aprc.it/api/200x125/http://vtt-trail-trek-en-coeur-de-garonne.fr/"
+                            alt="disign"
+                            className="service__img"
+                        />
                     </div>
                     <div className="col-md-6">
                         <div className="service__text">
@@ -100,13 +99,11 @@ const CompService = () => {
             <div className="service pro-shop ">
                 <div className="row">
                     <div className="col-md-2 col-12 _blockImg">
-
-                            <img
-                                src="https://aprc.it/api/200x125/https://crwn-live-ecom-course.herokuapp.com/"
-                                alt="disign"
-                                className="service__img"
-                            />
-
+                        <img
+                            src="https://aprc.it/api/200x125/https://crwn-live-ecom-course.herokuapp.com/"
+                            alt="disign"
+                            className="service__img"
+                        />
                     </div>
                     <div className="col-md-6 col-12">
                         <div className="service__text">
@@ -149,13 +146,7 @@ const CompService = () => {
             <div className="service git ">
                 <div className="row _row">
                     <div className="col-md-2 col-12 _blockImg">
-
-                            <img
-                                src={net}
-                                alt="dev-web"
-                                className="service__img"
-                            />
-
+                        <img src={net} alt="dev-web" className="service__img" />
                     </div>
                     <div className="col-md-6 col-12">
                         <div className="service__text">
@@ -206,16 +197,10 @@ const CompService = () => {
 
             {/* _____________________________________________________________________________________________________ */}
 
-            <div className="service portofolio"> 
+            <div className="service portofolio">
                 <div className="row">
-                <div className="col-md-2 col-12 _blockImg">
-
-                            <img
-                                src={app}
-                                alt="dev-web"
-                                className="service__img"
-                            />
-
+                    <div className="col-md-2 col-12 _blockImg">
+                        <img src={app} alt="dev-web" className="service__img" />
                     </div>
                     <div className="col-md-6 col-12">
                         <div className="service__text">
@@ -234,7 +219,7 @@ const CompService = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-md-4 col-12" >
+                    <div className="col-md-4 col-12">
                         <h3 className="heading-tertiary u-margin-bottom-small">
                             Stack technique :
                         </h3>
