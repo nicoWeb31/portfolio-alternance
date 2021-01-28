@@ -27,22 +27,21 @@
     grid-area: _titleBox;
 }
 
-.pro-shop{
+.pro-shop {
     grid-area: pro-shop;
 }
 
-.git{
+.git {
     grid-area: git;
 }
 
-.portofolio{
+.portofolio {
     grid-area: portofolio;
 }
 
 .competence {
     grid-area: competence;
 }
-
 
 .service {
     width: 75%;
@@ -79,7 +78,7 @@
         background-color: rgba($c-tertiary, 0.8);
         color: white;
     }
-    h3{
+    h3 {
         text-align: center;
     }
 }
@@ -135,14 +134,12 @@
     }
 }
 
-.front{
+.front {
     @include flexCenter(column);
-
 }
 
-.back{
+.back {
     @include flexCenter(column);
-
 }
 
 @media (max-width: 840px) {
@@ -163,7 +160,8 @@
         }
     }
 
-    .service--comp{
+    .service--comp {
         padding: 1rem !important;
     }
 }
+

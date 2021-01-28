@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./compService.style.scss";
 import { ExternalLink } from "react-external-link";
-import web from "../../img/service/web.jpg";
 import app from "../../img/contact.jpg";
 import net from "../../img/service/net.jpg";
-import mern from "../../img/service/mern.jpg";
+import react from '../../img/react.jpeg'
 import GitHubApi from "../gitHubApi/GitHubApi";
-
+import node from '../../img/nodejs-520.jpeg'
 import githubService from "../../service/ApiGithub";
 import Spinner from "../spinner/Spinner";
 import TitreSecondary from "../titre/TitreSecondary";
@@ -243,7 +242,7 @@ const CompService = () => {
                 </h2>
                 <div className="row">
                     <div className="col-md-6 col-12 front">
-                        <CardCompetence title='Front-end' img={web}>
+                        <CardCompetence title='Front-end' img={react}>
                             <ul>
                                 <li>Html5,CSS3,Sass</li>
                                 <li>React,redux,hook,ex...</li>
@@ -254,7 +253,7 @@ const CompService = () => {
                     </div>
 
                     <div className="col-md-6 col-12 back">
-                    <CardCompetence img={web} title='Back-end' >
+                    <CardCompetence img={node} title='Back-end' >
                     <ul>
                                 <li>Node,PHP</li>
                                 <li>express, mongodb</li>
