@@ -5,6 +5,22 @@
     position: relative;
 }
 
+.rowGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "perso ux";
+}
+
+.ux{
+    grid-area: ux;
+}
+
+.perso{
+    grid-area: perso;
+}
+
 
 
 .presentation {
@@ -17,7 +33,6 @@
     padding: 9rem;
     transform: skewX(-4deg);
 
-
     // &>*{
     //     transform: skewX(8deg);
     // }
@@ -27,14 +42,13 @@
         height: 15rem;
         float: left;
         padding: 1rem;
-        
+
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
-
     }
-    
+
     &__img {
         width: 100%;
         height: 100%;
@@ -46,15 +60,20 @@
     // }
 }
 
-
-@media (max-width:840px){
-
-    .presentation{
-        
+@media (max-width: 840px) {
+    .presentation {
         transform: skewX(-0deg);
-        padding:1.5rem;
+        padding: 1.5rem;
     }
 
-    
+    .rowGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "perso"
+        "ux";
+    }
+
 
 }
