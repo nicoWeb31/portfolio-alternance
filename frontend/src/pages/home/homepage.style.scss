@@ -26,16 +26,19 @@
         width: 15rem;
         height: 15rem;
         float: left;
+        padding: 1rem;
+        
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
-        transform: translateX(-4rem) skewX(4deg);
-    }
 
+    }
+    
     &__img {
         width: 100%;
         height: 100%;
+        border-radius: 50%;
     }
 
     // &__text {
@@ -51,5 +54,7 @@
         transform: skewX(-0deg);
         padding:1.5rem;
     }
+
+    
 
 }

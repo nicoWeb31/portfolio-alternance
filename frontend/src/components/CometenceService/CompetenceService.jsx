@@ -7,7 +7,7 @@ const CompetenceService = () => {
         <div className="competence">
             <TitreSecondary>Services / Compétences</TitreSecondary>
             <div className="row">
-                <div className="col-md-3  col-12">
+                <div className="col-md-3  col-12 cardContent">
                     <div className="competence__card">
                         <div className="competence__text">
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">
@@ -20,7 +20,7 @@ const CompetenceService = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3  col-12">
+                <div className="col-md-3  col-12 cardContent">
                     <div className="competence__card">
                         <div className="competence__text">
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">
@@ -33,7 +33,7 @@ const CompetenceService = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3  col-12">
+                <div className="col-md-3  col-12 cardContent">
                     <div className="competence__card">
                         <div className="competence__text">
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">
@@ -47,7 +47,7 @@ const CompetenceService = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3  col-12">
+                <div className="col-md-3  col-12 cardContent">
                     <div className="competence__card">
                         <div className="competence__text">
                             <h3 className="heading-tertiary u-margin-bottom-small headingBox">

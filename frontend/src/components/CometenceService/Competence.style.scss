@@ -27,11 +27,20 @@
 
 
 
-@media (max-width:740px){
+@media screen and (max-width: 680px){
 
     .competence__card{
-        
+        display: flex;
+        justify-content: center;
         transform: skewX(-0deg);
+        width: 70%;
+        padding:3rem;
+        margin: 2rem auto;
+        
+    }
+
+    .cardContent{
+        padding:0;
     }
 
 }
