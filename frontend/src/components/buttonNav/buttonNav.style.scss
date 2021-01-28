@@ -159,4 +159,18 @@
 
         }
     }
+
+    .navigation{
+
+        &__button{
+            top: 4rem;
+            right: 4rem;
+        }
+
+        &__background{
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+            
+    }
 }
