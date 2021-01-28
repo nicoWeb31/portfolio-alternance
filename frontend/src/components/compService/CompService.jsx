@@ -10,6 +10,7 @@ import GitHubApi from "../gitHubApi/GitHubApi";
 import githubService from "../../service/ApiGithub";
 import Spinner from "../spinner/Spinner";
 import TitreSecondary from "../titre/TitreSecondary";
+import CardCompetence from "../cardCompetence/CardCompetence";
 
 const CompService = () => {
     const [user, setUser] = useState({});
@@ -237,230 +238,31 @@ const CompService = () => {
             {/* ___________________________________________________________________________________________________________ */}
 
             <div className="service service--comp competence">
-                <h3 className="heading-tertiary u-margin-bottom-small competenceTitle">
+                <h2 className="heading-tertiary u-margin-bottom-small competenceTitle">
                     Competence
-                </h3>
+                </h2>
                 <div className="row">
-                    <div className="col-md-6 col-12">
-                        <div className="service__text pt-3">
+                    <div className="col-md-6 col-12 front">
+                        <CardCompetence title='Front-end' img={web}>
                             <ul>
-                                <li className="liProgress">
-                                    {" "}
-                                    html5
-                                    <div className="">
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                    </div>
-                                </li>
-                                <li className="liProgress">
-                                    {" "}
-                                    javascript{" "}
-                                    <div className="">
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                    </div>
-                                </li>
-                                <li className="liProgress">
-                                    {" "}
-                                    Css3
-                                    <div className="">
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                    </div>
-                                </li>
-                                <li className="liProgress">
-                                    {" "}
-                                    Node
-                                    <div className="">
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                    </div>
-                                </li>
-                                <li className="liProgress">
-                                    {" "}
-                                    Php
-                                    <div className="">
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                    </div>
-                                </li>
-                                <li className="liProgress">
-                                    {" "}
-                                    React
-                                    <div className="">
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                    </div>
-                                </li>
-                                <li className="liProgress">
-                                    {" "}
-                                    Express{" "}
-                                    <div className="">
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                    </div>
-                                </li>
-                                <li className="liProgress">
-                                    {" "}
-                                    MongoDB{" "}
-                                    <div className="">
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="fa fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                        <i
-                                            class="far fa-star"
-                                            aria-hidden="true"
-                                        ></i>
-                                    </div>
-                                </li>
+                                <li>Html5,CSS3,Sass</li>
+                                <li>React,redux,hook,ex...</li>
+                                <li>Bootstrap</li>
                             </ul>
-                        </div>
+
+                        </CardCompetence>
                     </div>
-                    <div className="col-md-6 col-12 ">
-                        <img
-                            src={mern}
-                            alt="mern stack"
-                            className="img-fluid"
-                        />
+
+                    <div className="col-md-6 col-12 back">
+                    <CardCompetence img={web} title='Back-end' >
+                    <ul>
+                                <li>Node,PHP</li>
+                                <li>express, mongodb</li>
+                                <li>SQL,noSQL</li>
+                            </ul>
+
+                    </CardCompetence>
+                        
                     </div>
                 </div>
 

@@ -8,7 +8,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30rem 70rem 70rem 70rem 60rem 150rem;
+    grid-template-rows: 30rem 70rem 70rem 70rem 60rem 160rem;
     gap: 0.5em 0.5px;
     grid-template-areas:
         "_titleBox _titleBox _titleBox _titleBox _titleBox _titleBox"
@@ -42,6 +42,7 @@
 .competence {
     grid-area: competence;
 }
+
 
 .service {
     width: 75%;
@@ -77,6 +78,9 @@
     &--comp {
         background-color: rgba($c-tertiary, 0.8);
         color: white;
+    }
+    h3{
+        text-align: center;
     }
 }
 
@@ -129,6 +133,16 @@
     &:active {
         text-decoration: none;
     }
+}
+
+.front{
+    @include flexCenter(column);
+
+}
+
+.back{
+    @include flexCenter(column);
+
 }
 
 @media (max-width: 840px) {
