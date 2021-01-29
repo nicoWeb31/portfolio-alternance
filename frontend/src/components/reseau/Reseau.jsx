@@ -20,7 +20,7 @@ const Reseau = () => {
             <div className= "container P-2 col-12 col-md-6">
                 <h2 className="text-center">Mes réseaux pro : </h2>
 
-                <div className="d-flex row justify-content-around m-4 p-4">
+                <div className="_boxImg">
                 <a target="_blank" href="https://www.linkedin.com/in/nicolas-riot"><img src={logoLink} alt="logo" className="imgRe" /></a>
                 <a target="_blank" href="https://github.com/nicoWeb31"><img src={logoGit} alt="logo" style={styleLogo} className="imgRe"/></a>
 
