@@ -15,22 +15,23 @@
             transparent 50%
         ),
         url(../../img/contact.jpg);
-
-    background-size: 100%;
-    margin: 5rem 10rem;
-    border-radius: 5px;
-    box-shadow: 0 1.5rem 5rem rgba($c-black, 0.9);
-
-    h4 {
-        padding-left: 10rem;
-        padding-top: 5rem;
-        font-size: $default-font-size;
-        font-weight: 700;
-        text-transform: uppercase;
+        
+        background-size: 100%;
+        margin: 5rem 10rem;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 5rem rgba($c-black, 0.9);
+        
+        h4 {
+            padding-left: 10rem;
+            padding-top: 5rem;
+            font-size: $default-font-size;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
     }
-}
-
-.form {
+    
+    .form {
+    margin-bottom: 6rem;
     width: 50%;
     padding: 6rem;
 
