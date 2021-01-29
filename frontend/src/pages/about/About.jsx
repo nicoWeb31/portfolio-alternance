@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./about.style.scss";
-import seo from "../../img/about/search-engine-optimization-586422_1920.jpg";
-import hand from "../../img/about/hand-3108158_1920.jpg";
-import app from "../../img/about/apps-2558373_1920.jpg";
+import me from "../../img/homeN/me.png";
+
 import TitreSecondary from "../../components/titre/TitreSecondary";
 
 const About = () => {
@@ -13,34 +12,45 @@ const About = () => {
             <div className="rowGrid-about ">
                 <div className="g_block-text u-padding-big">
                     <h3 className="heading-tertiary u-margin-bottom-small">
-                        Pour des projets clés en main!
+                        A l'écoute de toutes propositions !!!
                     </h3>
                     <p className="paragraph">
-                        En résumé, votre page À Propos accueillera l’histoire de
-                        la création de votre marque, et elle présentera les
-                        points forts de votre entreprise. Plus important encore,
-                        elle servira de page de vente apportant des réponses à
-                        la question la plus importante que se posent les
-                        nouveaux clients (outre la question « Pourquoi
-                        devrais-je acheter les produits de cette marque ? »), à
-                        savoir : Pourquoi devrais-je faire confiance à cette
-                        marque ou à ce marchand ?
+                        Durant cette phase de reconversion porféssionelle et en periode compliqué , je reste a l'ecoute de toute proposition,
+                        c'est avec grand plaisir que je 
                     </p>
 
                     <h3 className="heading-tertiary u-margin-bottom-small ">
-                        Pour des Missions Pro !
+                        Le plus de l'alternance !
                     </h3>
                     <p className="paragraph ">
-                        En résumé, votre page À Propos accueillera l’histoire de
-                        la création de votre marque, et elle présentera les
-                        points forts de votre entreprise. Plus important encore,
-                        elle servira de page de vente apportant des réponses à
-                        la question la plus importante que se posent les
-                        nouveaux clients (outre la question « Pourquoi
-                        devrais-je acheter les produits de cette marque ? »), à
-                        savoir : Pourquoi devrais-je faire confiance à cette
-                        marque ou à ce marchand ?
+                        Pourquoi pas l'alternance ?
+                        Pouvoir mettre le pied a l'etrier dans une entrprise, partager avec elle et ce faire accompagner dans la continuité de ma reconversion serai vraiment le top.
+                        De plusnJusqu'au 28 février 2021, l'État a mis en place une prime de 5 à 8 000€ pour inciter les employeurs à embaucher les alternants.
+                        
                     </p>
+
+
+
+                    <h3 className="heading-tertiary u-margin-bottom-small">
+                        Pourquoi OpenClassrooms ?
+                    </h3>
+
+                    <p className="paragraph ">
+                        La reputation d'openClassrooms n'est plus a faire.La pédagogie a base de projet me convient a 100%, rien de mieux que de mettre les deux pied dans le plat!!.<br/>
+                        Quelque porjet couver par l'alternance :
+                    </p>
+                    <ul>
+                        <li>Menez une étude utilisateurs</li>
+                        <li>nterprétez des données analytiques</li>
+                        <li>Améliorez l'ergonomie d'un site internet de vacances</li>
+                        <li>Préparez et animez un atelier de co-conception</li>
+                        <li>Prototypez une application mobile</li>
+                        <li>Définissez une promesse de service</li>
+                        <li>Faites évoluer un service existant</li>
+                        <li>Créez votre portfolio UX</li>
+                    </ul>
+                    
+                        
 
                     <Link to="/projet" className="btn-text">
                         <i className="fas fa-arrow-right"></i>
@@ -48,23 +58,7 @@ const About = () => {
                     </Link>
                 </div>
                 <div className="g_block-img photoCol">
-                    <div className="composition">
-                        <img
-                            src={seo}
-                            alt="seo"
-                            className="composition__photo composition__photo--p1"
-                        />
-                        <img
-                            src={hand}
-                            alt="hand"
-                            className="composition__photo composition__photo--p2"
-                        />
-                        <img
-                            src={app}
-                            alt="app"
-                            className="composition__photo composition__photo--p3"
-                        />
-                    </div>
+                    <img src={me} alt="moi" className="_img" />
                 </div>
             </div>
         </div>

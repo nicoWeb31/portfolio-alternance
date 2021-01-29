@@ -1,38 +1,52 @@
 @import "../../variable";
 
-
-.rowGrid-about{
+.rowGrid-about {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas:
-    "txt img";
+    grid-template-areas: 
+    "img txt"
+    "img txt";
 
-    .g_block-text{
+    .g_block-text {
         grid-area: txt;
         margin: 3rem;
         padding: 3rem;
         align-self: center;
         justify-self: center;
+        background-color: aliceblue;
+
+        border-radius: 1rem;
+        box-shadow: 0 3rem 6rem rgba($c-black, 0.4);
     }
 
-    .g_block-img{
+    .g_block-img {
         grid-area: img;
-        margin:3rem;
+        margin: 3rem;
         padding: 3rem;
         align-self: center;
-
-
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
+._img{
+
+    opacity: 0.5;
+    width:95%;
+    border-radius: 1rem;
+    box-shadow: 0 3rem 6rem rgba($c-black, 0.4);
+}
 
 .about {
     padding-top: 10rem;
     background-color: $c-color-grey;
+
     .photoCol {
         .composition {
             position: relative;
@@ -76,30 +90,26 @@
     }
 }
 
-
 @media (max-width: 840px) {
-    
-    .rowGrid-about{
+    .rowGrid-about {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         gap: 0px 0px;
-        grid-template-areas:
-        "txt"
-        "img"
-        ;
+        grid-template-areas: "txt" "img";
 
-        .g_block-img{
+        .g_block-img {
             grid-area: img;
-            margin:1rem;
+            margin: 1rem;
             padding: 1rem;
             align-self: center;
-    
-    
         }
 
-
+        .g_block-text {
+            grid-area: txt;
+            margin: 1rem;
+            padding: 1rem;
+            align-self: center;
+        }
     }
-    
-
 }
