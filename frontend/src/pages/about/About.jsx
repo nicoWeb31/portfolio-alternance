@@ -7,7 +7,7 @@ import TitreSecondary from "../../components/titre/TitreSecondary";
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about" id="hautPageAbout">
             <TitreSecondary>Développeur web Mern Stack</TitreSecondary>
             <div className="rowGrid-about ">
                 <div className="g_block-text u-padding-big">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./buttonNav.style.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const ButtonNav = () => {
     const [toggle, setToggle] = useState(false);
@@ -28,7 +29,7 @@ const ButtonNav = () => {
                 <ul className="navigation__list">
                     <li className="navigation__item">
                         <Link
-                            to="/"
+                            to="/#hautPageHome "
                             className="navigation__link"
                             onClick={() => setToggle(false)}
                         >
@@ -38,7 +39,7 @@ const ButtonNav = () => {
                     </li>
                     <li className="navigation__item">
                         <Link
-                            to="/projet"
+                            to="/projet#hautProjet"
                             className="navigation__link"
                             onClick={() => setToggle(false)}
                         >
@@ -48,7 +49,7 @@ const ButtonNav = () => {
                     </li>
                     <li className="navigation__item">
                         <Link
-                            to="/contact"
+                            to="/contact#hautPageContact"
                             className="navigation__link"
                             onClick={() => setToggle(false)}
                         >
@@ -58,7 +59,7 @@ const ButtonNav = () => {
                     </li>
                     <li className="navigation__item">
                         <Link
-                            to="/about"
+                            to="/about#hautPageAbout"
                             className="navigation__link"
                             onClick={() => setToggle(false)}
                         >

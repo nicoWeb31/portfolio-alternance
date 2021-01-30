@@ -33,7 +33,7 @@ const CompService = () => {
     };
 
     return (
-        <div className="servCom">
+        <div className="servCom" id="hautPageProjet">
             <div className="_titleBox">
                 <TitreSecondary>Projet / Competence</TitreSecondary>
             </div>

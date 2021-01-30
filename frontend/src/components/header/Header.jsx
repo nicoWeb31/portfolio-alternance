@@ -1,13 +1,14 @@
 import React from "react";
 import "./header.style.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
     return (
 
             <header className="header">
                 <div className="header__logo-box">
-                    <Link to="/">
+                    <Link to="/#hautPageHome">
                         <i className="fas fa-home fa-3x header__logo"></i>
                     </Link>
                 </div>
@@ -21,7 +22,7 @@ const Header = () => {
                         </span>
                     </h1>
 
-                    <Link to='/projet' className="btn btn-white btn-animated">
+                    <Link to='/projet#hautPageProjet' className="btn btn-white btn-animated">
                         {" "}
                         Réalisation
                     </Link>

@@ -102,7 +102,7 @@ const Contact = ({ history, handleSubmit }) => {
         dispatch(reset("messageForm"));
     };
     return (
-        <div className="contact">
+        <div className="contact" id="hautPageContact">
             <TitreSecondary>vous pouvez me contacter</TitreSecondary>
             <BaniereContact message=" 06-63-32-38-36" />
             <div className="spin">
@@ -112,8 +112,8 @@ const Contact = ({ history, handleSubmit }) => {
             </div>
 
             <div className="formulaire">
-                <div className="formulaire__form">
-                    <h4>Laisser moi un message</h4>
+                <div className="formulaire__form" >
+                    <h4>Laissez moi un message</h4>
                     <form
                         onSubmit={handleSubmit(onHandleSubmit)}
                         className="form"

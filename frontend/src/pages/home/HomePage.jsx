@@ -11,7 +11,7 @@ import TitreSecondary from "../../components/titre/TitreSecondary";
 const HomePage = () => {
     return (
         <>
-            <div className="home">
+            <div className="home" id="hautPageHome">
                 <div className="bg-video">
                     <video className="bg-video__content" autoPlay muted loop>
                         <source src={bgVideo} type="video/mp4" />

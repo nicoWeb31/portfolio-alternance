@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import "./footer.style.scss";
 
 const Footer = () => {
@@ -13,22 +14,22 @@ const Footer = () => {
                     <div className="footer__nav">
                         <ul className="footer__list">
                             <li className="footer__item">
-                                <Link to="/" className="footer__link">
+                                <Link to="/#hautPageHome" className="footer__link">
                                     Accueil
                                 </Link>
                             </li>
                             <li className="footer__item">
-                                <Link to="/about" className="footer__link">
+                                <Link to="/about#hautPageAbout" className="footer__link">
                                     About
                                 </Link>
                             </li>
                             <li className="footer__item">
-                                <Link to="/contact" className="footer__link">
+                                <Link to="/contact#hautPageContact" className="footer__link">
                                     Contact
                                 </Link>
                             </li>
                             <li className="footer__item">
-                                <Link to="/projet" className="footer__link">
+                                <Link to="/projet#hautPageProjet" className="footer__link">
                                     Projet
                                 </Link>
                             </li>
@@ -71,7 +72,14 @@ const Footer = () => {
 
                     <p className="footer__copyright">
                         N'hésitez pas à me{" "}
-                        <Link to="/contact" className="">
+                        <Link
+                            to={{
+                                pathname: "/contact",
+                                hash:"#hautPageContact",
+                                state: { fromDashboard: true }
+                            }}
+                            className=""
+                        >
                             {" "}
                             contacter.
                         </Link>
