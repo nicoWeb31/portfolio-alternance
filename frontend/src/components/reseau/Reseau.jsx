@@ -21,6 +21,7 @@ const Reseau = () => {
                 <h2 className="text-center">Mes réseaux pro : </h2>
 
                 <div className="_boxImg">
+                
                 <a target="_blank" href="https://www.linkedin.com/in/nicolas-riot"><img src={logoLink} alt="logo" className="imgRe" /></a>
                 <a target="_blank" href="https://github.com/nicoWeb31"><img src={logoGit} alt="logo" style={styleLogo} className="imgRe"/></a>
 

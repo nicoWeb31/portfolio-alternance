@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from "react-router-hash-link";
 import "./footer.style.scss";
 
 const Footer = () => {
@@ -14,22 +14,34 @@ const Footer = () => {
                     <div className="footer__nav">
                         <ul className="footer__list">
                             <li className="footer__item">
-                                <Link to="/#hautPageHome" className="footer__link">
+                                <Link
+                                    to="/#hautPageHome"
+                                    className="footer__link"
+                                >
                                     Accueil
                                 </Link>
                             </li>
                             <li className="footer__item">
-                                <Link to="/about#hautPageAbout" className="footer__link">
+                                <Link
+                                    to="/about#hautPageAbout"
+                                    className="footer__link"
+                                >
                                     About
                                 </Link>
                             </li>
                             <li className="footer__item">
-                                <Link to="/contact#hautPageContact" className="footer__link">
+                                <Link
+                                    to="/contact#hautPageContact"
+                                    className="footer__link"
+                                >
                                     Contact
                                 </Link>
                             </li>
                             <li className="footer__item">
-                                <Link to="/projet#hautPageProjet" className="footer__link">
+                                <Link
+                                    to="/projet#hautPageProjet"
+                                    className="footer__link"
+                                >
                                     Projet
                                 </Link>
                             </li>
@@ -62,12 +74,20 @@ const Footer = () => {
                 </div>
                 <div className="col-12 col-md-12 col-xl-4 ">
                     <div className="footer__iconeReseau d-flex ">
-                        <Link to="/" className="footer__link">
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/nicolas-riot"
+                            className="footer__link"
+                        >
                             <i className="fab fa-linkedin-in fa-3x"></i>
-                        </Link>
-                        <Link to="/" className="footer__link">
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://github.com/nicoWeb31"
+                            className="footer__link"
+                        >
                             <i class="fab fa-github fa-3x"></i>
-                        </Link>
+                        </a>
                     </div>
 
                     <p className="footer__copyright">
@@ -75,8 +95,8 @@ const Footer = () => {
                         <Link
                             to={{
                                 pathname: "/contact",
-                                hash:"#hautPageContact",
-                                state: { fromDashboard: true }
+                                hash: "#hautPageContact",
+                                state: { fromDashboard: true },
                             }}
                             className=""
                         >
