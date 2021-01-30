@@ -63,7 +63,7 @@ const CompService = () => {
                                     Conception et création du site de A à Z.
                                 </li>
                                 <li>
-                                    Design du site, maquettage, logo, wirefram...
+                                    Design du site, maquettage, logo, wireframe...
                                 </li>
                                 <li>Mise en production, maintenance</li>
                             </ul>
@@ -158,7 +158,7 @@ const CompService = () => {
                                     Conception et création de l'appli de A à Z.
                                 </li>
                                 <li>
-                                    Design du site, maquettage, logo, wirefram...
+                                    Design du site, maquettage, logo, wireframe...
                                 </li>
                                 <li>
                                     Mise en production sur Heroku, maintenance.
@@ -209,7 +209,7 @@ const CompService = () => {
                                     Conception et création du site de A à Z.
                                 </li>
                                 <li>
-                                    Design du site, maquettage, logo, wirefram...
+                                    Design du site, maquettage, logo, wireframe...
                                 </li>
                                 <li>Mise en production, maintenance </li>
                             </ul>

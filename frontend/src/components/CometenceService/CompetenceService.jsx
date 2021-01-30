@@ -28,7 +28,7 @@ const CompetenceService = () => {
                             Design
                         </h3>
                         <p>
-                            Création de wirefram, travail sur charte graphique,
+                            Création de wireframe, travail sur charte graphique,
                             logo, etc...
                         </p>
                     </div>
@@ -42,8 +42,8 @@ const CompetenceService = () => {
                         </h3>
                         <p>
                             Développement, intégration graphique de site
-                            internet(Html5, Css3, react....). Base de données
-                            sql et nosql(moongodb)
+                            internet (Html5, Css3, react....). Base de données
+                            sql et nosql (moongodb)
                         </p>
                     </div>
                 </div>

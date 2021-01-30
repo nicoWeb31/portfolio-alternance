@@ -24,7 +24,7 @@ const About = () => {
                     </h3>
                     <p className="paragraph ">
                         Pourquoi me tourner vers l'alternance ?
-                        Pour pouvoir mettre un pied à l'étrier au monde du travail, de partager avec l'entreprise qui m'accueillera et de me faire accompagner dans la continuité de ma formation.
+                        Pour pouvoir mettre un pied à l'étrier au monde du travail, pour partager et échanger avec l'entreprise qui m'accueillera et me faire accompagner dans la continuité de ma formation.
                         Et pour l'entreprise, jusqu'au 28 février 2021, l'État a mis en place une prime de 5000 à 8 000€ pour inciter les employeurs à embaucher des alternants.
                         
                     </p>
