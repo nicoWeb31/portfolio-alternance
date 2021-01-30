@@ -115,4 +115,10 @@
     .footer__link{
         font-size:0.9rem !important;
     }
+
+    .footer__contact--phone,
+.footer__contact--mail,
+.footer__contact--adress {
+    @include flexCenter(column);
+}
 }

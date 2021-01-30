@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.style.scss";
 
-
 const Footer = () => {
     return (
         <div className="footer">
@@ -39,19 +38,21 @@ const Footer = () => {
                 <div className="col-12 col-md-12 col-xl-4 ">
                     <div className="footer__contact">
                         <div className="footer__contact--adress info-block">
-                            <i class="fa fa-map-marker footer__icone" ></i>
-                            <p>
-                                <span>Impasse Larribeau</span> - 31260 Montespan
-                            </p>
+                            <i class="fa fa-map-marker footer__icone"></i>
+                            <p>Impasse Larribeau</p>
+                            <p>31260 Montespan</p>
                         </div>
                         <div className="footer__contact--phone info-block">
-                            <i class="fa fa-phone footer__icone" ></i>
+                            <i class="fa fa-phone footer__icone"></i>
                             <p>06.63.32.38.36</p>
                         </div>
                         <div className="footer__contact--mail info-block">
                             <i class="fa fa-envelope footer__icone "></i>
                             <p>
-                                <Link href="mailto:nico.riot@free.fr" className="footer__link">
+                                <Link
+                                    href="mailto:nico.riot@free.fr"
+                                    className="footer__link"
+                                >
                                     nico.riot@free.fr
                                 </Link>
                             </p>
@@ -59,17 +60,25 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="col-12 col-md-12 col-xl-4 ">
-
                     <div className="footer__iconeReseau d-flex ">
-                    <Link to='/' className="footer__link"><i className="fab fa-linkedin-in fa-3x"></i></Link>
-					<Link to='/' className="footer__link"><i class="fab fa-github fa-3x"></i></Link>
+                        <Link to="/" className="footer__link">
+                            <i className="fab fa-linkedin-in fa-3x"></i>
+                        </Link>
+                        <Link to="/" className="footer__link">
+                            <i class="fab fa-github fa-3x"></i>
+                        </Link>
                     </div>
 
                     <p className="footer__copyright">
-                        N'hésitez pas à me <Link to='/contact' className="footer__link"> contacter.</Link>
-                        
+                        N'hésitez pas à me{" "}
+                        <Link to="/contact" className="">
+                            {" "}
+                            contacter.
+                        </Link>
                     </p>
-                    <p className="text-center">Copyright &copy; by Riot Nicolas 2020.</p>
+                    <p className="text-center">
+                        Copyright &copy; by Riot Nicolas 2020.
+                    </p>
                 </div>
             </div>
         </div>

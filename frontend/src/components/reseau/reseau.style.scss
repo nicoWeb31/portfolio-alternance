@@ -10,3 +10,14 @@
     align-items: center;
     margin-top: 2rem
 }
+
+@media screen and (max-width:680px){
+
+._boxImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem
+}
+}
