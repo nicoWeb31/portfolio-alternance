@@ -60,12 +60,12 @@ const CompService = () => {
                             <ul>
                                 <li>Cahier des charges.</li>
                                 <li>
-                                    Conception et creation du site de A à Z.
+                                    Conception et création du site de A à Z.
                                 </li>
                                 <li>
-                                    Disign du site,maquetage,logo, wirefram...
+                                    Design du site, maquettage, logo, wirefram...
                                 </li>
-                                <li>Mise en production, maintenace</li>
+                                <li>Mise en production, maintenance</li>
                             </ul>
                         </div>
                     </div>
@@ -76,23 +76,23 @@ const CompService = () => {
                         <ul>
                             <li>Html5,CSS3</li>
                             <li>PHP, mysql</li>
-                            <li>Framwork : Symfony 4, Bootstrap 4, react </li>
+                            <li>Framework : Symfony 4, Bootstrap 4, react </li>
                         </ul>
                     </div>
                 </div>
                 <hr />
                 <p>
-                    Ce projet a etait realiser dans le cadre de ma formation de
-                    concepteur/dévelloppeur web. Réaliser entierement en
-                    autonomie, il a sevit de support a mon mémoire de fin
-                    d'etude.
+                    Ce projet a été réalisé dans le cadre de ma formation de
+                    concepteur/développeur web. Réalisé entièrement en
+                    autonomie, il a servi de support à mon mémoire de fin
+                    d'études.
                 </p>
                 <ExternalLink
                     href="https://vtt-trail-trek-en-coeur-de-garonne.fr/"
                     target="_blank"
                     className="href-site"
                 >
-                    <button className="btn-site"> voir le site !</button>
+                    <button className="btn-site"> voir le site</button>
                 </ExternalLink>
             </div>
             {/* _______________________________________________________________________________________________ */}
@@ -111,8 +111,7 @@ const CompService = () => {
                                 Pro-shop
                             </h3>
                             <p>
-                                Conception d'un site e-commerce dans le cadre
-                                d'un projet Udemy
+                                Conception d'un site e-commerce.
                             </p>
                         </div>
                     </div>
@@ -121,25 +120,22 @@ const CompService = () => {
                             Stack technique :
                         </h3>
                         <ul>
-                            <li>Html5,scss</li>
+                            <li>Html5, sass</li>
                             <li>Node, mongodb</li>
-                            <li>react, hook , redux, stripe</li>
+                            <li>react, hook, redux, stripe</li>
                         </ul>
                     </div>
                 </div>
                 <hr />
                 <p>
-                    Ce projet a etait realiser dans le cadre de ma formation de
-                    concepteur/dévelloppeur web. Réaliser entierement en
-                    autonomie, il a sevit de support a mon mémoire de fin
-                    d'etude.
+                    Ce projet a été réalisé dans le cadre d'un projet Udemy en totale autonomie lors de ma formation autodidacte.
                 </p>
                 <ExternalLink
                     href="https://crwn-live-ecom-course.herokuapp.com"
                     target="_blank"
                     className="href-site"
                 >
-                    <button className="btn-site"> voir le site !</button>
+                    <button className="btn-site"> voir le site</button>
                 </ExternalLink>
             </div>
             {/* ______________________________________________________________________________________________________ */}
@@ -154,18 +150,18 @@ const CompService = () => {
                                 Search Github
                             </h3>
                             <p>
-                                Petite application de recherche utilisateur sur
+                                Application de recherche d'utilisateurs sur
                                 Github.
                             </p>
                             <ul className="list">
                                 <li>
-                                    Conception et creation du site de A à Z.
+                                    Conception et création de l'appli de A à Z.
                                 </li>
                                 <li>
-                                    Disign du site,maquetage,logo, wirefram...
+                                    Design du site, maquettage, logo, wirefram...
                                 </li>
                                 <li>
-                                    Mise en production, maintenace, sur heroku
+                                    Mise en production sur Heroku, maintenance.
                                 </li>
                             </ul>
                         </div>
@@ -183,15 +179,15 @@ const CompService = () => {
                 </div>
                 <hr />
                 <p>
-                    Ce projet a etait realiser dans le but de reforcer mais
-                    connaissance sur react,et travailler sur un l'api
+                    Ce projet a été réalisé dans le but de renforcer mes
+                    connaissances sur react et de travailler sur une api
                 </p>
                 <ExternalLink
                     href="https://githubsearchnico31.netlify.app/"
                     target="_blank"
                     className="href-site"
                 >
-                    <button className="btn-site"> voir le site !</button>
+                    <button className="btn-site"> voir le site</button>
                 </ExternalLink>
             </div>
 
@@ -210,12 +206,12 @@ const CompService = () => {
 
                             <ul>
                                 <li>
-                                    Conception et creation du site de A à Z.
+                                    Conception et création du site de A à Z.
                                 </li>
                                 <li>
-                                    Disign du site,maquetage,logo, wirefram...
+                                    Design du site, maquettage, logo, wirefram...
                                 </li>
-                                <li>Mise en production, maintenace </li>
+                                <li>Mise en production, maintenance </li>
                             </ul>
                         </div>
                     </div>
@@ -224,14 +220,14 @@ const CompService = () => {
                             Stack technique :
                         </h3>
                         <ul>
-                            <li>Html5,scss</li>
+                            <li>Html5, sass</li>
                             <li>Node, mongodb, express</li>
-                            <li>react,redux, hook</li>
+                            <li>react, redux, hook</li>
                         </ul>
                     </div>
                 </div>
                 <hr />
-                <p>vous êtes ici !</p>
+                <p>Vous êtes ici !</p>
             </div>
 
             {/* ___________________________________________________________________________________________________________ */}

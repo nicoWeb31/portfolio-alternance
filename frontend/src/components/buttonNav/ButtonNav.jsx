@@ -64,7 +64,7 @@ const ButtonNav = () => {
                             onClick={() => setToggle(false)}
                         >
                             {" "}
-                            A propos !
+                            A propos
                         </Link>
                     </li>
                 </ul>

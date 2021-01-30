@@ -37,14 +37,14 @@ const HomePage = () => {
                             </h3>
                             <p>
                                 Bonjour, je m'appelle Nicolas Riot. Je suis en
-                                reconvertion professionnelle depuis maintenant 3
+                                reconversion professionnelle depuis maintenant 3
                                 ans. Suite à un bilan de compétences je me suis
                                 lancé dans une licence en distanciel de
                                 développeur-concepteur d'application web. Après
                                 l'apprentissage des bases du web (html5, css3)
                                 et du php (+poo), j'ai réalisé mon premier
                                 projet important sous Symfony4, projet qui m'a
-                                servit de support à la soutenance de ma licence.
+                                servi de support à la soutenance de ma licence.
                                 Depuis l'obtention de mon diplôme, je monte en
                                 compétence sur React et Node; Javascript étant
                                 un langage que j'adore utiliser et que je trouve

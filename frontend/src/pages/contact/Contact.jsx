@@ -75,7 +75,7 @@ const renderTextarea = (formProps) => {
 
 const Contact = ({ history, handleSubmit }) => {
     const [successMess, setSuccessMess] = useState(
-        "Votre message a été envoyer avec success!  j'y repondrai des que possible ! merci"
+        "Merci, votre message a été envoyé avec succès ! J'y répondrai dès que possible !"
     );
 
     const dispatch = useDispatch();
@@ -140,7 +140,7 @@ const Contact = ({ history, handleSubmit }) => {
 
                         <button className="btn-submit" type="submit">
                             <i className="fas fa-arrow-right"></i>
-                            envoyer
+                            {"   "} envoyer
                         </button>
                     </form>
                 </div>
@@ -158,7 +158,7 @@ const validate = (formValues) => {
     const errors = {};
     if (!formValues.name) {
         //only ran if user did not enter a name
-        errors.name = "vous devez entrer un nom !";
+        errors.name = "vous devez entrer votre nom !";
     }
 
     if (
@@ -166,7 +166,7 @@ const validate = (formValues) => {
             formValues.email
         ) !== true
     ) {
-        errors.email = "votre adresse email a un problémes !!!";
+        errors.email = "votre adresse email a un problème !";
     }
     if (!formValues.email) {
         //only ran if user did not enter a name
