@@ -4,3 +4,39 @@
     align-items: center !important;
     flex-direction: $direction !important;
 }
+
+
+//Media query manager
+// 0-600px :  phone
+// 600-900px :  tab-portrait
+// 900-1200px :  tab-landscape
+// [1200-1800] :  is the normal style apply
+// 1800 + px :  big desktop
+
+// breackPoint argument choices
+// -phone
+// -tab-port
+// -tab-land 
+// -big-desktop
+
+@mixin respond($breakPoint) {
+
+    @if $breakPoint == phone {
+        @media (max-width: 600px) { @content };
+    }
+
+    @if $breakPoint == tab-port {
+        @media (max-width: 900px) { @content };
+    }
+
+    @if $breakPoint == tab-land {
+        @media (max-width: 1200px) { @content };
+    }
+
+    @if $breakPoint == big-desktop {
+        @media (min-width: 1800px) { @content };
+    }
+
+
+
+}
