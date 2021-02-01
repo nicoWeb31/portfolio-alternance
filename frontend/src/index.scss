@@ -12,7 +12,21 @@
 /* 16px by default,  declaration puis on joue avec les rems ex.... */
 html {
     /* font-size: 10px; */
-    font-size: 62.5%;
+    font-size: 62.5%;//normal
+
+    @include respond(tab-land) {
+        font-size: 56.25%;// <1200
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;//<900
+    }
+    // @include respond(phone) {
+    //     font-size: 50%; //<600
+    // }
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
 }
 
 body {
@@ -90,8 +104,6 @@ main {
         margin-bottom: 3rem;
     }
 }
-
-
 
 .heading-tertiary {
     font-size: $default-font-size;

@@ -19,22 +19,24 @@
 // -tab-land 
 // -big-desktop
 
+//1em === 16px
+
 @mixin respond($breakPoint) {
 
     @if $breakPoint == phone {
-        @media (max-width: 600px) { @content };
+        @media (max-width: 37.5em) { @content }; //600px
     }
 
     @if $breakPoint == tab-port {
-        @media (max-width: 900px) { @content };
+        @media (max-width: 56.25em) { @content }; //900px
     }
 
     @if $breakPoint == tab-land {
-        @media (max-width: 1200px) { @content };
+        @media (max-width: 75em ) { @content };//1200px
     }
 
     @if $breakPoint == big-desktop {
-        @media (min-width: 1800px) { @content };
+        @media (min-width: 112.5em) { @content };//1800px
     }
 
 
