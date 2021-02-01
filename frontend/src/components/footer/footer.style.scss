@@ -39,6 +39,10 @@
             margin: 0.5rem;
             padding-left: 1rem;
         }
+
+        @include respond(phone){
+            padding-top: 6rem;
+        }
     }
 
     &__nav {
@@ -70,6 +74,10 @@
         display: flex;
         justify-content: space-around;
         margin: 2rem;
+
+        @include respond(phone) {
+            padding-top: 6rem;
+        }
     }
 
     &__link {
@@ -80,6 +88,10 @@
             text-transform: uppercase;
             display: inline-block;
             transition: all 0.2s;
+
+            @include respond(phone) {
+                font-size:0.9rem !important;
+            }
         }
 
         &:hover {
@@ -105,20 +117,27 @@
 .footer__contact--mail,
 .footer__contact--adress {
     @include flexCenter(row);
-}
 
-@media screen and (max-width: 680px) {
-    .footer__contact,.footer__iconeReseau {
-        padding-top: 6rem;
-    }
-
-    .footer__link{
-        font-size:0.9rem !important;
-    }
-
-    .footer__contact--phone,
-.footer__contact--mail,
-.footer__contact--adress {
+    @include respond(phone) {
     @include flexCenter(column);
+
+    }
 }
-}
+
+
+// @include respond(phone) {
+//     // .footer__contact,.footer__iconeReseau {
+//     //     padding-top: 6rem;
+//     // }
+    
+//     // .footer__link{
+//     //     font-size:0.9rem !important;
+//     // }
+    
+//     // .footer__contact--phone,
+//     // .footer__contact--mail,
+//     // .footer__contact--adress {
+//     // @include flexCenter(column);
+//     // }
+    
+// }
