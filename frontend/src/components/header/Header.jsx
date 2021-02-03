@@ -6,8 +6,8 @@ import BtnPrimary from "../btn-primary/BtnPrimary";
 import { useTrail, animated } from "react-spring";
 
 const Header = () => {
-    const fast = { tension: 1200, friction: 40 };
-    const slow = { mass: 10, tension: 200, friction: 50 };
+    const fast = { tension: 1200, friction: 40 }
+    const slow = { mass: 10, tension: 200, friction: 50 }
     const trans = (x, y) =>
         `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`;
     const [trail, set] = useTrail(3, () => ({
@@ -22,7 +22,7 @@ const Header = () => {
                     <feGaussianBlur
                         in="SourceGraphic"
                         result="blur"
-                        stdDeviation="30"
+                        stdDeviation="15"
                     />
                     <feColorMatrix
                         in="blur"

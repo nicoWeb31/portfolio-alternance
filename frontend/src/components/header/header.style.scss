@@ -92,49 +92,49 @@
     position: absolute;
     will-change: transform;
     border-radius: 50%;
-    background: $c-primary;
+    background: $c-tertiary;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     opacity: 0.6;
 }
 
 .hooks-main > div:nth-child(1) {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 .hooks-main > div:nth-child(2) {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
 }
 
 .hooks-main > div:nth-child(3) {
-    width: 120px;
-    height: 120px;
+    width: 75px;
+    height: 75px;
 }
 
 .hooks-main > div::after {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background: rgba($c-tertiary, 0.8);
+    background: rgba($c-tertiary, 0.6);
 }
 
 .hooks-main > div:nth-child(2)::after {
-    top: 70px;
-    left: 70px;
-    width: 70px;
-    height: 70px;
+    top: 17px;
+    left: 17px;
+    width: 17px;
+    height: 17px;
 }
 
 .hooks-main > div:nth-child(3)::after {
-    top: 50px;
-    left: 50px;
-    width: 50px;
-    height: 50px;
+    top: 25px;
+    left: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 .hooks-main {
