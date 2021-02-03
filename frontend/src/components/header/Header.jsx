@@ -2,6 +2,7 @@ import React from "react";
 import "./header.style.scss";
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
+import BtnPrimary from "../btn-primary/BtnPrimary";
 
 const Header = () => {
     return (
@@ -21,11 +22,10 @@ const Header = () => {
                             Recherche alternance UX designer(Bac +5)
                         </span>
                     </h1>
-
-                    <Link to='/projet#hautPageProjet' className="btn btn-white btn-animated">
-                        {" "}
+                    <BtnPrimary linkTo="/projet#hautPageProjet">
                         Réalisation
-                    </Link>
+                    </BtnPrimary>
+
                 </div>
             </header>
 
