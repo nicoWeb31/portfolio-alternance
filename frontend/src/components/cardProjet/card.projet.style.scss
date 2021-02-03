@@ -1,0 +1,67 @@
+@import "../../variable";
+.cardProject {
+    position: relative;
+    background: rgba($c-primary, 0.1);
+    border-radius: 0.6rem;
+    width: 50rem;
+    height: 70rem;
+    margin: 1rem;
+    z-index: 3;
+
+    box-shadow: 2rem 2rem 5rem rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+
+    .content {
+        padding: 2rem;
+        text-align: center;
+        transition: 0.5s;
+
+        .card-title {
+            position: absolute;
+            top: 1rem;
+            right: 50%;
+            font-size: 3rem;
+            pointer-events: none;
+            color: rgba(0, 0, 0, 1);
+        }
+
+        img{
+            width: 100%;
+        }
+
+
+        h3{
+            font-size: 3rem;
+            color: $c-secondary;
+            z-index: 1;
+        }
+
+        p{
+            font-size: 1.5rem;
+            color: $c-black;
+            font-weight: 400;
+        }
+
+        a{
+            position: relative;
+            display: inline-block;
+            padding: .1rem 1.4rem;
+            margin-top: 5rem;
+            background-color: $c-white;
+            color: $c-black;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 700;
+
+        }
+    }
+}

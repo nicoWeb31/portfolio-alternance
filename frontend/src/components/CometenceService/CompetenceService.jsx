@@ -6,7 +6,7 @@ const CompetenceService = () => {
     return (
         <div className="competence grid-container">
             <div className="title">
-                <TitreSecondary>Services / Compétences</TitreSecondary>
+                <TitreSecondary>Compétences</TitreSecondary>
             </div>
 
             <div className="competence__card conc">
