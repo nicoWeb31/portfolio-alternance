@@ -11,7 +11,7 @@ const BaniereContact = ({ message, btnMessage}) => {
                     {message}
                 </h3>
                 {
-                    btnMessage && <BtnPrimary linkTo="'/contact#hautPageContact'"> {btnMessage}</BtnPrimary>
+                    btnMessage && <BtnPrimary linkTo="/contact#hautPageContact"> {btnMessage}</BtnPrimary>
                     
                 }
             

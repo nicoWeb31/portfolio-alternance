@@ -63,8 +63,8 @@
         // box-shadow: 0 2rem 3rem rgba($c-black, 0.4);
         background-color: $c-tertiary;
         color: white;
-        box-shadow: 0 0 0.5rem $c-primary, 0 0 2.5rem $c-primary,
-            0 0 5rem $c-primary, 0 0 20rem $c-primary;
+        box-shadow: 0 0 0.5rem  $c-tertiary, 0 0 2.5rem  $c-tertiary,
+            0 0 5rem  $c-tertiary, 0 0 20rem  $c-tertiary;
         -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 
         &::after {
