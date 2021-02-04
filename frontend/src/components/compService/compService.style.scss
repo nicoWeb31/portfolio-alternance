@@ -55,6 +55,9 @@
         clip-path: circle(30% at right 70%);
     }
 
+        @include respond(phone) {
+        padding-top: 5.5rem;
+    }
 
 }
 
@@ -179,6 +182,7 @@
 @media (max-width: 840px) {
     .servCom {
         @include flexCenter(column);
+        
     }
 
     .service {

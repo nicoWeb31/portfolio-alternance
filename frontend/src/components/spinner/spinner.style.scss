@@ -12,6 +12,7 @@
 
 .loader-container{
     @include flexCenter(column);
+    display: block;
 }
 .loader {
 

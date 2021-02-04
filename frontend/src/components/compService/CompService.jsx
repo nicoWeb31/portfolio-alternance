@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from "react-redux";
 import "./compService.style.scss";
 import react from "../../img/react.jpeg";
 import GitHubApi from "../gitHubApi/GitHubApi";
@@ -8,30 +8,31 @@ import githubService from "../../service/ApiGithub";
 import Spinner from "../spinner/Spinner";
 import TitreSecondary from "../titre/TitreSecondary";
 import CardCompetence from "../cardCompetence/CardCompetence";
-import {listProjetcs} from "../../redux/actions/projetAction";
+import { listProjetcs } from "../../redux/actions/projetAction";
 
 import CardProject from "../cardProjet/CardProject";
 
-
 const CompService = () => {
-
     const dispatch = useDispatch();
-    const {loading : loadingProjet, projets} = useSelector(state=>state.projets)
+    const { loading: loadingProjet, projets } = useSelector(
+        (state) => state.projets
+    );
     // console.log("🚀 ~ file: CompService.jsx ~ line 20 ~ CompService ~ projects", projects)
-    console.log("🚀 ~ file: CompService.jsx ~ line 29 ~ CompService ~ project", projets)
-    const {project} = projets;
-
-
-
+    console.log(
+        "🚀 ~ file: CompService.jsx ~ line 29 ~ CompService ~ project",
+        projets
+    );
+    const { project } = projets;
 
     const [user, setUser] = useState({});
     const [loading, setLading] = useState(false);
 
     useEffect(() => {
         fetchUser("nicoWeb31");
-        dispatch(listProjetcs())
-
+        dispatch(listProjetcs());
     }, []);
+
+
 
     const fetchUser = async (name) => {
         setLading(true);
@@ -48,32 +49,18 @@ const CompService = () => {
 
     return (
         <div className="servCom" id="hautPageProjet">
-
-                <div className="_titleBox">
-                    <TitreSecondary>
-                        Projet / Competence
-                    </TitreSecondary>
-                </div>
-
-            <div className="cardContainer">
-
-                {
-                    project && project.map((p)=>{
-                        return (
-                            <CardProject data={p} index={p._id}/>
-                        )
-
-                    })
-                }
-
-
+            <div className="_titleBox">
+                <TitreSecondary>Projet / Competence</TitreSecondary>
+            {loadingProjet ? <Spinner /> : "" }
             </div>
 
 
-
-
-
-
+                <div className="cardContainer">
+                    {project &&
+                        project.map((p) => {
+                            return <CardProject data={p} index={p._id} />;
+                        })}
+                </div>
 
             <div className="service service--comp competence">
                 <h2 className="heading-tertiary u-margin-bottom-small competenceTitle">

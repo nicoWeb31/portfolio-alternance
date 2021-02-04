@@ -5,9 +5,9 @@ import Tilt from "../VanillaTilt";
 
 const CardProject = ({ data }) => {
     const options = {
-        speed: 400,
-        max: 25,
-        glare: true,
+        speed: 200,
+        max: 15,
+        glare: false,
     };
 
     return (
@@ -17,9 +17,9 @@ const CardProject = ({ data }) => {
                 <img src={data.image} alt="code" />
                 <p>{data.description}</p>
                 <hr/>
-                <h3>Stack Technique</h3>
+                <h3>Stack Technique :</h3>
                 <p>{data.stack}</p>
-                <a href={data.link}>Voir le site</a>
+                <a href={data.link} className="btn">Voir le site</a>
             </div>
         </Tilt>
     );

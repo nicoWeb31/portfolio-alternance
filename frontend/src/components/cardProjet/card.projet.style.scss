@@ -21,34 +21,35 @@
     backdrop-filter: blur(5px);
 
     .content {
-        padding: 2rem;
+        padding: 0rem;
         text-align: center;
         transition: 0.5s;
 
         .card-title {
-            position: absolute;
-            top: 1rem;
-            right: 50%;
+
             font-size: 3rem;
-            pointer-events: none;
+
             color: rgba(0, 0, 0, 1);
         }
 
         img{
+            margin-top: 3rem;
             width: 100%;
         }
 
 
         h3{
-            font-size: 3rem;
+            font-size: 1.5rem;
             color: $c-secondary;
             z-index: 1;
+            font-weight: 400;
         }
 
         p{
             font-size: 1.5rem;
             color: $c-black;
             font-weight: 400;
+            margin-top: 3rem;;
         }
 
         a{
@@ -61,11 +62,11 @@
             color: $c-black;
             border-radius: 20px;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 400;
 
             &:hover{
                 color: $c-white;
-                background-color: $c-black;
+                background-color: $c-tertiary;
             }
 
         }
