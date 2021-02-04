@@ -4,6 +4,8 @@ import path from 'path';
 const app = express();
 // import morgan from "morgan";
 import routerMessage from './routes/messageRoutes.js';
+import routerProjets from './routes/projetsRoutes.js';
+
 import AppError from './utils/appError.js';
 import {errorHandler} from './controllers/errorController.js';
 import dotenv from "dotenv";
@@ -31,6 +33,8 @@ app.use(express.json({ limit: "10kb" }));
 
 //router server________________________________________________________________________
 app.use('/api/v1/messages',routerMessage)
+app.use('/api/v1/projets',routerProjets)
+
 
 
 

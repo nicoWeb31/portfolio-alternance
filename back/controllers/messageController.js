@@ -1,5 +1,5 @@
 import Message from "../models/messageModel.js";
-import {catchAsync} from '../utils/catchAsync.js'
+import {catchAsync} from '../utils/catchAsync.js';
 
 
 //@desc create  a new message
