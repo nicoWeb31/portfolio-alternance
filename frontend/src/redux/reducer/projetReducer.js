@@ -15,7 +15,7 @@ export const projetReducer = (state = {projets:[]}, action) => {
             console.log(action.payload)
             return {
                 loading: false,
-                message: action.payload
+                projets: action.payload
             };
 
         case PROJET_LIST_FAILURE:

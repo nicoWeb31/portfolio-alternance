@@ -4,7 +4,7 @@
     background: rgba($c-primary, 0.1);
     border-radius: 0.6rem;
     width: 50rem;
-    height: 70rem;
+    height: 80rem;
     margin: 1rem;
     z-index: 3;
 
@@ -61,6 +61,11 @@
             border-radius: 20px;
             text-decoration: none;
             font-weight: 700;
+
+            &:hover{
+                color: $c-white;
+                background-color: $c-black;
+            }
 
         }
     }

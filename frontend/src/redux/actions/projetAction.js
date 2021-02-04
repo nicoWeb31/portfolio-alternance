@@ -5,7 +5,7 @@ import {
 } from "../type/projetType.js";
 import axios from 'axios';
 
-export const listPoducts = () => async (dispatch) => {
+export const listProjetcs = () => async (dispatch) => {
     try {
         //on dispatch la request pour le loading par exemple
         dispatch({ type: PROJET_LIST_REQUEST });

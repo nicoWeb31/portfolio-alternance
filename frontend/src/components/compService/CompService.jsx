@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from 'react-redux';
 import "./compService.style.scss";
-import { ExternalLink } from "react-external-link";
-import app from "../../img/contact.jpg";
-import net from "../../img/service/net.jpg";
 import react from "../../img/react.jpeg";
 import GitHubApi from "../gitHubApi/GitHubApi";
 import node from "../../img/nodejs-520.jpeg";
@@ -10,11 +8,19 @@ import githubService from "../../service/ApiGithub";
 import Spinner from "../spinner/Spinner";
 import TitreSecondary from "../titre/TitreSecondary";
 import CardCompetence from "../cardCompetence/CardCompetence";
+import {listProjetcs} from "../../redux/actions/projetAction";
 
 import CardProject from "../cardProjet/CardProject";
 
 
 const CompService = () => {
+
+    const dispatch = useDispatch();
+    const {loading : loadingProjet, projets} = useSelector(state=>state.projets)
+    // console.log("🚀 ~ file: CompService.jsx ~ line 20 ~ CompService ~ projects", projects)
+    console.log("🚀 ~ file: CompService.jsx ~ line 29 ~ CompService ~ project", projets)
+    const {project} = projets;
+
 
 
 
@@ -23,6 +29,8 @@ const CompService = () => {
 
     useEffect(() => {
         fetchUser("nicoWeb31");
+        dispatch(listProjetcs())
+
     }, []);
 
     const fetchUser = async (name) => {
@@ -49,10 +57,15 @@ const CompService = () => {
 
             <div className="cardContainer">
 
-            <CardProject title="VTT-En coeur de garonne"/>
-            <CardProject title="VTT-En coeur de garonne"/>
-            <CardProject title="VTT-En coeur de garonne"/>
-            <CardProject title="VTT-En coeur de garonne"/>
+                {
+                    project && project.map((p)=>{
+                        return (
+                            <CardProject data={p} index={p._id}/>
+                        )
+
+                    })
+                }
+
 
             </div>
 
