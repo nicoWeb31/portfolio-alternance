@@ -1,4 +1,7 @@
 @import "../../variable";
+@import "../../mixin";
+
+
 .cardProject {
     position: relative;
     background: rgba($c-primary, 0.1);
@@ -20,6 +23,12 @@
     border-left: 1px solid rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
 
+    @include respond(phone){
+        width: 44rem;
+    }
+
+
+
     .content {
         padding: 0rem;
         text-align: center;
@@ -35,6 +44,9 @@
         img{
             margin-top: 3rem;
             width: 100%;
+            @include respond(phone){
+                width: 90%;
+            }
         }
 
 
