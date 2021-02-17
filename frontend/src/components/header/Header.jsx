@@ -50,7 +50,7 @@ const Header = () => {
                 <h1 className="heading-primary">
                     <span className="heading-primary--main">Riot Nicolas</span>
                     <span className="heading-primary--secondary">
-                        Recherche alternance UX designer(Bac +5)
+                        Développeur - concepteur Web/front-react
                     </span>
                 </h1>
                 <BtnPrimary linkTo="/projet#hautPageProjet">

@@ -23,7 +23,7 @@ const About = () => {
                         Les plus de l'alternance ?
                     </h3>
                     <p className="paragraph ">
-                        Pourquoi me tourner vers l'alternance ?
+                        Pourquoi pas une Alternance ?
                         Pour pouvoir mettre un pied à l'étrier au monde du travail, pour partager et échanger avec l'entreprise qui m'accueillera et me faire accompagner dans la continuité de ma formation.
                         Et pour l'entreprise, jusqu'au 28 février 2021, l'État a mis en place une prime de 5000 à 8 000€ pour inciter les employeurs à embaucher des alternants.
                         
@@ -39,7 +39,7 @@ const About = () => {
                         La réputation d'Openclassrooms n'est plus à faire. La pédagogie est basée sur la conception et la création de projets concrets avec un accompagnement personnalisé, ce qui me convient totalement. Quoi de mieux pour plonger à corps perdu dans la réalité du métier ?<br/>
                         Quelques projets couverts par l'alternance :
                     </p>
-                    <ul>
+                    {/* <ul>
                         <li>Menez une étude utilisateurs</li>
                         <li>Interprétez des données analytiques</li>
                         <li>Améliorez l'ergonomie d'un site internet de vacances</li>
@@ -48,7 +48,7 @@ const About = () => {
                         <li>Définissez une promesse de service</li>
                         <li>Faites évoluer un service existant</li>
                         <li>Créez votre portfolio UX</li>
-                    </ul>
+                    </ul> */}
                     
                         
 

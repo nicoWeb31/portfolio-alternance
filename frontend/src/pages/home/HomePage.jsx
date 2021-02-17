@@ -62,16 +62,16 @@ const HomePage = () => {
                         </figure>
                         <div className="presentation__text">
                             <h3 className="heading-tertiary u-margin-bottom-small">
-                                Pourquoi l'UX ? Pourquoi en alternance ?
+                                Et ce que je recherche ?
                             </h3>
                             <p>
-                                Suite à l'obtention de ma licence et fort de mon
+                                Suite à l'obtention de ma licence et fort de mon expérience en distanciel, je suis prêt et préparer à intégrer un poste de junior en tant que développeur front React.
+                                J'ai également la possibilité d'effectuer une alternance avec Openclassrooms, je ne suis fermé à aucune opportunité.
+                                Bien au contraire, j'étudie toutes vos propositions. Alors n'hésitez plus à me contacter ! 
+                                {/* Suite à l'obtention de ma licence et fort de mon
                                 expérience de travail en distanciel, je me suis
-                                dis : Pourquoi ne pas continuer sur ma lancée ?
-                                Ayant survolé l'UX design et voulant vraiment en
-                                apprendre plus sur ce domaine, j'ai décidé de
-                                postuler chez OpenClassroom pour le master d'UX
-                                designer. Aprés réflexion et souhaitant par la
+                                dis : Pourquoi ne pas continuer sur ma lancée avec un master ?
+                                Aprés réflexion et souhaitant par la
                                 même occasion engranger de l'expérience au sein
                                 d'une entreprise, j'ai fait le choix de
                                 l'alternance. Au rythme proposé par
@@ -80,7 +80,7 @@ const HomePage = () => {
                                 un projet sur la continuité au fil des semaines,
                                 sans interruption. De plus cette formation est
                                 composée à 100% par des projets concrets, quoi
-                                de plus formateur ?
+                                de plus formateur ? */}
                             </p>
                         </div>
                     </div>
